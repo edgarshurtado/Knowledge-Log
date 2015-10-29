@@ -2,6 +2,7 @@
 
 * [Learn Python the Hard Way](http://learnpythonthehardway.org/book/)
 * [Eloquent JavaScript](http://eloquentjavascript.net/)
+* [The pragmatic programmer](http://www.amazon.com/The-Pragmatic-Programmer-Journeyman-Master/dp/020161622X)
 * [HTML & CSS. Design and build websites](http://www.htmlandcssbook.com/)
 * [Data science from scratch](http://shop.oreilly.com/product/0636920033400.do)
 * [Bioinformatics for Biologists](http://cseweb.ucsd.edu/~ppevzner/B4B/)
