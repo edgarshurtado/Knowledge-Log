@@ -41,3 +41,36 @@
 * Reading *Appretince patterns*
   * Suggests having a list of books to read and books I already read.
     * With this idea I think it could be great having a MOOC's list as well
+  * Create a meetup group
+  * You don't have to read every book in a linear way. You can jump over chapters.
+
+##29/10/2015
+* Emilcar Daily
+  * Roaming is going to be banished
+  * El confidencial has an article talking about the current state of the net neutrality in europe
+* EOI
+  * fancy-dresses : disfraces
+  * Halloween : All Hallows' Eve
+  * to carve : tallar
+  * to play a trick: hacer una jugarreta.
+  * sweets or chocolates: dulces o bombones/chocolatinas.
+  * clove of garlic: Diente de ajo.
+  * out of my depth: Quedarse sin respiración
+  * trainee soliciter : aprendiz de abogado
+  * to tell off: to reprimand/ reñir
+  * put your foot in it : meter la pata
+  *relief : asistencia/socorro o alivio.
+* Gitter spanish chat
+  * How to conciliate the big amount of things we should do it's not easy. You can try do a bit of each every day o be proyect focus (you don't do other thing until you finished the previous one)
+  * I'm going to put a list of blog's I've read and recommend and blog posts to read
+* I could write the chapters of every book I've read instead of waiting for having read all of it
+* Self-executing functions in JavaScript:
+  ```javascript
+  (function foo(){
+    // some code…
+  })()
+  ```
+* BackEnd DAW
+  * .htaccess nos permite la utilización de urls amigables.
+* There's something called Coffe Script
+  * the CodeNewbie fellow piecedigital it's not fond of it because it's whitspaces sensitive. 
