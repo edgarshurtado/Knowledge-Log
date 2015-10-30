@@ -1,3 +1,17 @@
 #List of courses I want to do
 
+* [Understanding JavaScript the weird parts](https://www.udemy.com/understand-javascript/learn/#/)
+* [Learn and understand Node.js](https://www.udemy.com/understand-nodejs/)
 * [VIM and Python](https://realpython.com/blog/python/vim-and-python-a-match-made-in-heaven/)
+* [Regular Expresions](https://www.codeschool.com/courses/breaking-the-ice-with-regular-expressions?utm_source=changelog&utm_medium=email&utm_campaign=changelog-weekly)
+* [Software Testing](https://www.udacity.com/course/software-testing--cs258)
+* [Introduction to Cloud Computing](https://www.edx.org/course/introduction-cloud-computing-ieeex-cloudintro-x-0)
+* [Writting for the Web](https://www.open2study.com/courses/writing-for-the-web)
+* [Criptography I](https://www.coursera.org/course/crypto?utm_medium=email&utm_source=recommendations&utm_campaign=recommendationsEmail~recs_email_2015_10_04)
+* [User Experience for the Web](https://www.open2study.com/courses/user-experience-for-the-web)
+* [Codenhance. Friendly Coding Lessons for Biologists](http://codenhance.com/)
+* [Web development. How to build a Blog (Python)](https://www.udacity.com/course/web-development--cs253)
+* [Introducing to jQuery](https://www.edx.org/course/introduction-jquery-microsoft-dev208x?utm_source=Course+Announcements+Mailing+List&utm_medium=email&utm_content=title&utm_campaign=Student_Newsletter_August_18)
+* [MongoDB for Node.js developers](https://university.mongodb.com/courses/M101JS/about)
+* [MongoDB for Developers](https://university.mongodb.com/courses/M101P/about)
+* [Bioinformatics specialization](https://www.coursera.org/specialization/bioinformatics/34)
