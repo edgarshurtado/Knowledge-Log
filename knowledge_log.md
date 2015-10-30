@@ -74,3 +74,39 @@
   * .htaccess nos permite la utilización de urls amigables.
 * There's something called Coffe Script
   * the CodeNewbie fellow piecedigital it's not fond of it because it's whitspaces sensitive. 
+
+### 30/10/2015
+* Reading How to Write a Git Commit Message
+  * There's something called *commit squasing* which I should search for later
+  * The 7 rules for idiomatic commit messages:
+    1. Separate subject from body with blank line
+    2. Limit the subject line to 50 characters
+    3. Capitalize the subject line
+    4. Do not end the subject line with a period
+    5. Use the imperative mood in the subject line
+      * I think I read about this on the Git MOOC I took
+    6. Wrap the body at 72 characters
+    7. Use the body to explain what and why vs. how
+* Clase JavaScript
+  * Hay 2 tipos de claves para la pulsación de teclas
+    * código del carácter y código de tecla. Esto es porque no todos los teclados tienen la mísma disposición de los carácteres, entonces puede interesarnos más una cosa u otra.
+* Clase PHP
+  * añadido en la base de los href `<?php echo base_url()?>`
+  * Para encriptar:
+    * en el constructor del controlador cargar la librería
+
+```php
+$this->load->library('encrytp');
+```
+
+    * en el archivo config.php
+
+```php
+$config['encryption_key'] = ''; //poner una clave de encriptación
+```
+
+* FreeCodeCamp Gitter Chat
+  * [Parallax scrolling](https://en.wikipedia.org/wiki/Parallax_scrolling):
+
+> Parallax scrolling is a technique in computer graphics and web design, where background images move by the camera slower than foreground images, creating an illusion of depth in a 2D scene and adding to the immersion
+
