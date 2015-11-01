@@ -2,6 +2,7 @@
 
 * [Learn Python the Hard Way](http://learnpythonthehardway.org/book/)
 * [Eloquent JavaScript](http://eloquentjavascript.net/)
+* [JavaScript: The Good Parts](http://www.amazon.com/gp/product/0596517742/ref=as_li_tl?ie=UTF8&camp=1789&creative=390957&creativeASIN=0596517742&linkCode=as2&tag=ericleads-20&linkId=2DWOTC3SBWNMRXDK)
 * [The pragmatic programmer](http://www.amazon.com/The-Pragmatic-Programmer-Journeyman-Master/dp/020161622X)
 * [Pro Git](http://git-scm.com/book/en/v2)
 * [HTML & CSS. Design and build websites](http://www.htmlandcssbook.com/)
@@ -18,9 +19,12 @@
 * [Dive into Python 3](http://www.diveintopython3.net/)
 * [Biopython](http://biopython.org/DIST/docs/tutorial/Tutorial.html)
 * [Python for Bioinformatics](http://www.amazon.es/Bioinformatics-Chapman-Mathematical-Computational-Biology/dp/1584889292)
+* [Clean Code](http://www.amazon.es/Clean-code-Handbook-Software-Craftsmanship/dp/0132350882)
+* [Mindful Geek](http://www.amazon.com/dp/0692475389/ref=cm_sw_su_dp)
 
 ## Blog Posts
 
+* [Callbacks. JS for cats](http://jsforcats.com/#callbacks)
 * [Boilerplate code](https://en.wikipedia.org/wiki/Boilerplate_code)
 * [GitHub does dotfiles](https://dotfiles.github.io/)
 * [Shunting yard algorithm](http://wcipeg.com/wiki/Shunting_yard_algorithm)
