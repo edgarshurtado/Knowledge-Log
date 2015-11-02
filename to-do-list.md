@@ -24,6 +24,7 @@
 
 ## Blog Posts
 
+* [Choose the Right Web Hosting](http://www.webhostingsecretrevealed.net/choose-the-right-web-hosting/)
 * [Callbacks. JS for cats](http://jsforcats.com/#callbacks)
 * [Boilerplate code](https://en.wikipedia.org/wiki/Boilerplate_code)
 * [GitHub does dotfiles](https://dotfiles.github.io/)
@@ -32,6 +33,7 @@
 * [Problemas codificacion web. Configurar codificación utf8 php, mysql y html](https://www.pedroventura.com/php/problemas-codificacion-web-configurar-codificacion-utf8-php-mysql-y-html/)
 * [Understanding Python Decorators](http://simeonfranklin.com/blog/2012/jul/1/python-decorators-in-12-steps/)
 * [You can learn to code well enough to get a job in as little as 5 months](https://twitter.com/_ericelliott/status/660089011470516224)
+* [Setting up Sublime for Python Development](https://dbader.org/blog/setting-up-sublime-text-for-python-development)
 
 ## Courses
 
