@@ -110,3 +110,29 @@ $config['encryption_key'] = ''; //poner una clave de encriptación
 
 > Parallax scrolling is a technique in computer graphics and web design, where background images move by the camera slower than foreground images, creating an illusion of depth in a 2D scene and adding to the immersion
 
+### 2/11/2015
+* EOI
+  * drought -> sequía
+  * famine -> hambruna
+  * drunkenness -> de borrachos/ borracho/a
+  * appeal -> llamamiento/súplica
+  * project -> predecir
+  * law-abiding -> que obedece las leyes
+  * deterrent -> disuasorio/disuasivo
+  * surveillance -> vigilancia
+  * hand over -> entregar
+
+* Center a object exactly in the middle of the screen: [explanation post](https://css-tricks.com/quick-css-trick-how-to-center-an-object-exactly-in-the-center/)
+
+```css
+  .center {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+```
+
+* Reading Pragmatic Programmer:
+  * Relentless -> Implacable
+  * preclude -> excluir
