@@ -1,9 +1,9 @@
 ## Books
 
+* [The pragmatic programmer](http://www.amazon.com/The-Pragmatic-Programmer-Journeyman-Master/dp/020161622X) (In progress...)
 * [Learn Python the Hard Way](http://learnpythonthehardway.org/book/)
 * [Eloquent JavaScript](http://eloquentjavascript.net/)
 * [JavaScript: The Good Parts](http://www.amazon.com/gp/product/0596517742/ref=as_li_tl?ie=UTF8&camp=1789&creative=390957&creativeASIN=0596517742&linkCode=as2&tag=ericleads-20&linkId=2DWOTC3SBWNMRXDK)
-* [The pragmatic programmer](http://www.amazon.com/The-Pragmatic-Programmer-Journeyman-Master/dp/020161622X)
 * [Pro Git](http://git-scm.com/book/en/v2)
 * [HTML & CSS. Design and build websites](http://www.htmlandcssbook.com/)
 * [Data science from scratch](http://shop.oreilly.com/product/0636920033400.do)
