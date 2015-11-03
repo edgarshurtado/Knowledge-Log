@@ -22,23 +22,26 @@
       RewriteRule ^(.*)$ index.php/$1 [L,QSA]
       ```
 
-    * backoffice : Sistema para el mantenimiento de la página web al estilo de wp-admin
-    * En las vistas se ponen sólo los documentos .php y .html. Los CSS, JS, etc. van en otra carpeta llamada assets
+    * backoffice : Sistema para el mantenimiento de la página web al estilo de 
+wp-admin
+    * En las vistas se ponen sólo los documentos .php y .html. Los CSS, JS, 
+etc. van en otra carpeta llamada assets
 
 * Revert all the last changes made since last commit `git reset --hard HEAD `
 
-###28/10/2015
+### 28/10/2015
+
 * EOI homework
-  * Every other <day/month/year> -> Cada 2 <días/meses/años>
+  * Every other day/month/year -> Cada 2 días/meses/años
   * hoot -> Tocar la bocina
   * worn out -> agotado/a
-  * *in* pijamas (not *on* pijamas)
+  * in pijamas (not *on* pijamas)
   * p130 of the book is in the page 74 of the pdf
 
 * Clase de interfaces web
-  * *Carga cognitiva* se refiere a la cantidad de información que debe procesar el usuario para poder usar la aplicación.
+  * Carga cognitiva se refiere a la cantidad de información que debe procesar el usuario para poder usar la aplicación.
 
-* Reading *Appretince patterns*
+* Reading Appretince patterns
   * Suggests having a list of books to read and books I already read.
     * With this idea I think it could be great having a MOOC's list as well
   * Create a meetup group
@@ -59,17 +62,19 @@
   * trainee soliciter : aprendiz de abogado
   * to tell off: to reprimand/ reñir
   * put your foot in it : meter la pata
-  *relief : asistencia/socorro o alivio.
+  * relief : asistencia/socorro o alivio.
 * Gitter spanish chat
   * How to conciliate the big amount of things we should do it's not easy. You can try do a bit of each every day o be proyect focus (you don't do other thing until you finished the previous one)
   * I'm going to put a list of blog's I've read and recommend and blog posts to read
 * I could write the chapters of every book I've read instead of waiting for having read all of it
 * Self-executing functions in JavaScript:
-  ```javascript
-  (function foo(){
-    // some code…
-  })()
-  ```
+
+```javascript
+(function foo(){
+  // some code…
+})()
+```
+
 * BackEnd DAW
   * .htaccess nos permite la utilización de urls amigables.
 * There's something called Coffe Script
@@ -122,7 +127,7 @@ $config['encryption_key'] = ''; //poner una clave de encriptación
   * surveillance -> vigilancia
   * hand over -> entregar
 
-* Center a object exactly in the middle of the screen: [explanation post](https://css-tricks.com/quick-css-trick-how-to-center-an-object-exactly-in-the-center/)
+* Center an object exactly in the middle of the screen: [explanation post](https://css-tricks.com/quick-css-trick-how-to-center-an-object-exactly-in-the-center/)
 
 ```css
   .center {
@@ -136,3 +141,86 @@ $config['encryption_key'] = ''; //poner una clave de encriptación
 * Reading Pragmatic Programmer:
   * Relentless -> Implacable
   * preclude -> excluir
+
+### 3/11/2015
+
+* EOI
+
+    * Ask and answer in groups
+        * Do you shop at Charity shops?
+        * Do you take into consideration which charity shops do you go to?
+        * Do you shop at charity shops for that fell good feeling you have helped somebody out?
+        * Do you simply go to charity shops to look for a bargain?
+
+    * Charity:
+        * FairTrade
+        * Caritas
+        * The Red Cross
+        * Save the Children
+        * Alma de Acero
+        * RSPCA -> Royal Society for the Prevention of Cruelty to Animals (Protectora de animales)
+          * Kennel -> perrera
+        * OXFAM
+          * Famine = hanger = hambruna
+
+    * Things people can do for charity
+      * Give money to people collecting in the street
+      * Buy/Give clothes
+      * Go to events that raise money
+      * Give/buy food
+      * Harley Davidson event Every Km counts
+      * Participate in race that raise money
+      * Give toys
+      * Sell/buy lotery tickets
+      * Be a volunteer
+      * T.V. or radio programmes to raise money
+
+    * Handicraft -> manualidades
+
+    * State Verbs
+      1. Emotion -> love, hate, want, need
+      2. Possession -> have, own, belong
+      3. Sense -> see, hear, smell, seem
+      4. Thoughts -> know believe, remember, understand...
+
+    * Listening exercise
+        * How long have you been working here?
+        * How many chocolates have you eaten?
+        * What have you been doing?
+
+* CodeNewbie thread [Windows vs Mac for coding](http://discourse.codenewbie.org/t/windows-vs-mac-for-coding/1317/5)
+
+> If you do webdev, having easy access to software which works similar to the vast majority of servers out there is handy. Additionally, if you need to debug / code for iPhone / iPad, you're going to need a Mac to debug properly.
+>
+>[Cory_Underwood](http://discourse.codenewbie.org/users/Cory_Underwood)
+
+* Pragmatic programmer
+    * Unforeseen -> imprevisto
+    * shortcomings -> defectos
+    * My cat Ate my Code
+	* When a problem appears don't make excuses but posible solutions
+	* Don't blame others work if there was something you could have done to
+prevent it
+	* Whenever you're going to report a problem make sure you have tried 
+all the posible solutions that came to your mind first. Try to think what your 
+colleges would ask you
+	    * First mention of the rubber duck =).
+
+    * Software Entropy
+
+> When disorder increases in software, programmers call it "software rot"
+
+    * setback -> revés/contratiempo
+    * We have to repair any bad piece of code as soon as posible. If we let the
+bad implementations or decitions gather, the software will deteriorate 
+(Broken Window Theory)
+
+* Clase cliente (Forms)
+    * Existe el array `form` en JS nada más cargar la página, pero esta forma
+de programar no está recomendada porque hay que acceder a los distintos 
+formularios mediante index. La manera correcta sería mediante ID 
+    * Al final de la sección 7.1 hay un grupo de funciones útiles para
+validación de formularios.
+
+    * [pForm](www.phpform.org) Para la creación automática de formularios en
+html
