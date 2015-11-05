@@ -138,7 +138,7 @@ $config['encryption_key'] = ''; //poner una clave de encriptación
   }
 ```
 
-* Reading Pragmatic Programmer:
+#### Pragmatic Programmer:
   * Relentless -> Implacable
   * preclude -> excluir
 
@@ -194,7 +194,7 @@ $config['encryption_key'] = ''; //poner una clave de encriptación
 >
 >[Cory_Underwood](http://discourse.codenewbie.org/users/Cory_Underwood)
 
-* Pragmatic programmer
+#### Pragmatic programmer
     * Unforeseen -> imprevisto
     * shortcomings -> defectos
     * My cat Ate my Code
@@ -224,3 +224,86 @@ validación de formularios.
 
     * [pForm](www.phpform.org) Para la creación automática de formularios en
 html
+
+### 4/11/2015
+
+Pushbullet chrome plugin causes a 
+[pasteboard issue](https://discussions.apple.com/message/27250427#27250427)
+
+Delete all files without extension from bash
+```bash
+$ find . -type f  ! -name "*.*"  -delete
+``` 
+
+Compile and execute C from terminal
+```bash
+$ gcc -o compiled_file_name source_file.c
+$ ./compiled_file_name
+```
+
+Resize a tmux split to full window
+`ctr-B + z`
+
+Close files in vim without quiting vim
+`:bd` 
+
+Know if the web browser es Internet Explorer
+```javascript
+var ie = navigator.userAgent.toLowerCase().indexOf('msie')!=-1;
+```
+
+Big fail done by mysefl: `var x-coords = ...` instead of `var x_coords = ...` I lost 
+too much time debuggin this =(
+
+#### EiE
+Inflación : aumento del coste de vida con respecto al aumento de la productividad del país
+
+Puede ser que queramos buscar a la competencia. Eso es porque estando ahí la gente seguro
+que pasará ya sea para comprarme a mí o a la competencia, pero se crea así una "zona" donde
+los clientes pueden fácilmente encontrar un producto que están buscando.
+
+No confundir imagen corporativa con cultura corporativa:
+    * Cultura corporativa: Cómo és la empresa
+    * Imagen corporativa: Cómo la sociedad ve la empresa
+
+[Dark Horse](https://en.wikipedia.org/wiki/Dark_horse) Alguien del que no se esperaba
+grandes resultados y al final acaba destacando.
+
+#### Despliege WEB
+
+El router es el encargado de mandar la petición de dns del usuario a un servidor dns
+
+La comunicación con el servidor dns se hace mediante ip
+
+El router ante un conflicto entre el servidor objetivo configurado en el router
+y la configuración del ordenador, manda el router en última instancia 
+
+el archivo `host` es un archivo local que sirve de "servidor dns"
+
+El cliente pide y recibe información por protocolo `tcp` pero el servidor por 
+`udp`
+* tcp orientado a la conexión
+    * Esto significa que el ordenador gasta recursos y no se produce la comunicación
+a no ser que la conexión se establezca
+* udp no-orientado a la conexión
+    * Se realiza el envío sin asegurar la recepción.
+    * No obstante este es más rápido que el tcp y gasta menos recursos
+
+#### Pragmatic programmer
+* Quality as one of the proyect requirements. Look for the Good Enough Software
+* Don't do big changes all at once but gradually implement them
+* Don't lose the big picture and react quickly to the signs of something
+going wrong
+* Invest in your knowledge portfolio:
+    * Read technical books and non-technical books
+    * Learn new languages.
+    * Balance between safe investments (popular technologies today) and
+risky investments (be an early adopter)
+    * Seek for challenges. One think you're asked about and you don't 
+know the solution is a challenge to seek and find the answer.
+
+### 5/11/2015
+
+#### EOI
+
+goods --> products (bienes)
