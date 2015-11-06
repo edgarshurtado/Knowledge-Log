@@ -24,6 +24,7 @@
 
 ## Blog Posts
 
+* [EventTarget.addEventListener()](https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener)
 * [Choose the Right Web Hosting](http://www.webhostingsecretrevealed.net/choose-the-right-web-hosting/)
 * [Callbacks. JS for cats](http://jsforcats.com/#callbacks)
 * [Boilerplate code](https://en.wikipedia.org/wiki/Boilerplate_code)
