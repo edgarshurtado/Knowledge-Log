@@ -322,3 +322,19 @@ know the solution is a challenge to seek and find the answer.
 
 * Dave generated tests from the document?
 >
+
+### 6/11/2015
+
+#### CRUD PDO Project
+
+For being able to work with utf-8 characters, when stablishing the connection 
+add:
+
+```php
+<?php
+$dbh = new PDO('mysql:host=localhost;dbname=test', $user, $pass);
+?>
+```
+
+This add `dbname=test` to the `dsn` example in the PDO docs whitch doesn't work
+for retrieving data in utf-8 [source](http://stackoverflow.com/a/11249695)
