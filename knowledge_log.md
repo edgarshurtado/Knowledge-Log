@@ -306,4 +306,19 @@ know the solution is a challenge to seek and find the answer.
 
 #### EOI
 
-goods --> products (bienes)
+* goods --> products (bienes)
+* spokesman --> portavoz
+* *badly* always before the adjective: be badly hurt (not be hurt badly)
+
+#### Slack CodeNewbie
+* Guido van Rossum --> Creador de Python
+
+#### Pragmatic programmer
+
+* look over -> echar un vistazo
+* overlook -> pasar por alto
+
+> Too many developers concentrate solely on content when producing written documents. We think this is a mistake
+
+* Dave generated tests from the document?
+>
