@@ -39,6 +39,10 @@
 
 * [Understanding JavaScript the weird parts](https://www.udemy.com/understand-javascript/learn/#/)
 * [Learn and understand Node.js](https://www.udemy.com/understand-nodejs/)
+* [Server-side Development with Node.js](https://www.coursera.org/learn/server-side-development)
+* [Introduction to Meteor.js Development](https://www.coursera.org/learn/meteor-development)
+* [Web Application Development with JavaScript and MongoDB](https://www.coursera.org/learn/web-application-development)
+* [Front-End Web UI Frameworks and tools](https://www.coursera.org/learn/web-frameworks)
 * [VIM and Python](https://realpython.com/blog/python/vim-and-python-a-match-made-in-heaven/)
 * [Regular Expresions](https://www.codeschool.com/courses/breaking-the-ice-with-regular-expressions?utm_source=changelog&utm_medium=email&utm_campaign=changelog-weekly)
 * [Software Testing](https://www.udacity.com/course/software-testing--cs258)
