@@ -1,7 +1,7 @@
 
 ## Books
 
-* [Programming for everybody](http://www.pythonlearn.com/book.php)
+* [Python for informatics](http://www.pythonlearn.com/book.php)
 
 ## Courses
 
