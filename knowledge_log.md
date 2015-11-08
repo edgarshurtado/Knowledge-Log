@@ -338,3 +338,23 @@ $dbh = new PDO('mysql:host=localhost;dbname=test', $user, $pass);
 
 This add `dbname=test` to the `dsn` example in the PDO docs whitch doesn't work
 for retrieving data in utf-8 [source](http://stackoverflow.com/a/11249695)
+
+
+### 8/11/2015
+
+#### EOI
+
+* taxpayers --> contribuyentes
+* pursue -> discutir
+* blur -> hacer borroso
+* prompt -> rápido/a
+
+#### CodeNewbie Slack
+
+* pip -> Package managment for python.
+
+#### The pragmatic Programmer
+
+* Refactoring
+> Look for any opportunities to reorganize the code to improve its structure and
+> orthogonality.
