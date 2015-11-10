@@ -1,18 +1,18 @@
 ###27/10/2015
 
 * Talking with Juan Riquelme
-  * NeoVim is a new VIM implementation, however it's still in alpha
-  * [Koding](https://koding.com/): VM hosting plataform. For getting an VM to run projects on them
-  * [Floobits](https://floobits.com/): plugguin for pair-programming works with several IDEs
+    * NeoVim is a new VIM implementation, however it's still in alpha
+    * [Koding](https://koding.com/): VM hosting plataform. For getting an VM to run projects on them
+    * [Floobits](https://floobits.com/): plugguin for pair-programming works with several IDEs
 
 * You’re not so smart Podcast
-  * Mental reframing is on of the simplest and more effective ways to change bad thoughts
-  * [itskoko.com](http://itskoko.com/) web page project like StackOverflow but for sharing thoughts that the community help you to *debug* into good thoughts. Created by Robert R. Morris
+    * Mental reframing is on of the simplest and more effective ways to change bad thoughts
+    * [itskoko.com](http://itskoko.com/) web page project like StackOverflow but for sharing thoughts that the community help you to *debug* into good thoughts. Created by Robert R. Morris
 
 * Clase CodeIgnite
-  * Borrar index.php de la ruta url:
-    * en config.php tener la siguiente línea
-    * en .htaccess escribir:
+    * Borrar index.php de la ruta url:
+        * en config.php tener la siguiente línea
+        * en .htaccess escribir:
 
       ```
       RewriteEngine on
@@ -32,40 +32,40 @@ etc. van en otra carpeta llamada assets
 ### 28/10/2015
 
 * EOI homework
-  * Every other day/month/year -> Cada 2 días/meses/años
-  * hoot -> Tocar la bocina
-  * worn out -> agotado/a
-  * in pijamas (not *on* pijamas)
-  * p130 of the book is in the page 74 of the pdf
+    * Every other day/month/year -> Cada 2 días/meses/años
+    * hoot -> Tocar la bocina
+    * worn out -> agotado/a
+    * in pijamas (not *on* pijamas)
+    * p130 of the book is in the page 74 of the pdf
 
 * Clase de interfaces web
-  * Carga cognitiva se refiere a la cantidad de información que debe procesar el usuario para poder usar la aplicación.
+    * Carga cognitiva se refiere a la cantidad de información que debe procesar el usuario para poder usar la aplicación.
 
 * Reading Appretince patterns
-  * Suggests having a list of books to read and books I already read.
-    * With this idea I think it could be great having a MOOC's list as well
-  * Create a meetup group
-  * You don't have to read every book in a linear way. You can jump over chapters.
+    * Suggests having a list of books to read and books I already read.
+        * With this idea I think it could be great having a MOOC's list as well
+    * Create a meetup group
+    * You don't have to read every book in a linear way. You can jump over chapters.
 
 ##29/10/2015
 * Emilcar Daily
-  * Roaming is going to be banished
-  * El confidencial has an article talking about the current state of the net neutrality in europe
+    * Roaming is going to be banished
+    * El confidencial has an article talking about the current state of the net neutrality in europe
 * EOI
-  * fancy-dresses : disfraces
-  * Halloween : All Hallows' Eve
-  * to carve : tallar
-  * to play a trick: hacer una jugarreta.
-  * sweets or chocolates: dulces o bombones/chocolatinas.
-  * clove of garlic: Diente de ajo.
-  * out of my depth: Quedarse sin respiración
-  * trainee soliciter : aprendiz de abogado
-  * to tell off: to reprimand/ reñir
-  * put your foot in it : meter la pata
-  * relief : asistencia/socorro o alivio.
+    * fancy-dresses : disfraces
+    * Halloween : All Hallows' Eve
+    * to carve : tallar
+    * to play a trick: hacer una jugarreta.
+    * sweets or chocolates: dulces o bombones/chocolatinas.
+    * clove of garlic: Diente de ajo.
+    * out of my depth: Quedarse sin respiración
+    * trainee soliciter : aprendiz de abogado
+    * to tell off: to reprimand/ reñir
+    * put your foot in it : meter la pata
+    * relief : asistencia/socorro o alivio.
 * Gitter spanish chat
-  * How to conciliate the big amount of things we should do it's not easy. You can try do a bit of each every day o be proyect focus (you don't do other thing until you finished the previous one)
-  * I'm going to put a list of blog's I've read and recommend and blog posts to read
+    * How to conciliate the big amount of things we should do it's not easy. You can try do a bit of each every day o be proyect focus (you don't do other thing until you finished the previous one)
+    * I'm going to put a list of blog's I've read and recommend and blog posts to read
 * I could write the chapters of every book I've read instead of waiting for having read all of it
 * Self-executing functions in JavaScript:
 
@@ -76,22 +76,22 @@ etc. van en otra carpeta llamada assets
 ```
 
 * BackEnd DAW
-  * .htaccess nos permite la utilización de urls amigables.
+    * .htaccess nos permite la utilización de urls amigables.
 * There's something called Coffe Script
-  * the CodeNewbie fellow piecedigital it's not fond of it because it's whitspaces sensitive. 
+    * the CodeNewbie fellow piecedigital it's not fond of it because it's whitspaces sensitive. 
 
 ### 30/10/2015
 * Reading How to Write a Git Commit Message
-  * There's something called *commit squasing* which I should search for later
-  * The 7 rules for idiomatic commit messages:
-    1. Separate subject from body with blank line
-    2. Limit the subject line to 50 characters
-    3. Capitalize the subject line
-    4. Do not end the subject line with a period
-    5. Use the imperative mood in the subject line
-      * I think I read about this on the Git MOOC I took
-    6. Wrap the body at 72 characters
-    7. Use the body to explain what and why vs. how
+    * There's something called *commit squasing* which I should search for later
+    * The 7 rules for idiomatic commit messages:
+        1. Separate subject from body with blank line
+        2. Limit the subject line to 50 characters
+        3. Capitalize the subject line
+        4. Do not end the subject line with a period
+        5. Use the imperative mood in the subject line
+            * I think I read about this on the Git MOOC I took
+        6. Wrap the body at 72 characters
+        7. Use the body to explain what and why vs. how
 * Clase JavaScript
   * Hay 2 tipos de claves para la pulsación de teclas
     * código del carácter y código de tecla. Esto es porque no todos los teclados tienen la mísma disposición de los carácteres, entonces puede interesarnos más una cosa u otra.
@@ -358,3 +358,40 @@ for retrieving data in utf-8 [source](http://stackoverflow.com/a/11249695)
 * Refactoring
 > Look for any opportunities to reorganize the code to improve its structure and
 > orthogonality.
+
+### 9/11/2015
+
+#### The pragmatic Programmer
+* Make critical no reversible decisions. Implement things to dependent of the
+caracteristics at the time of development
+
+>“The mistake lies in assuming that any decision is cast in stone—and in not
+>preparing for the contingencies that might arise”
+>
+>Fragmento de: Hunt, Andrew;Thomas, David. “The Pragmatic Programmer: From 
+>Journeyman to Master”.
+
+* Use *tracer bullets*: rudimentary software that works for giving a real
+user experience. This technique is based on implementing a not fully functional
+program. Once we got the basic stuff runing satisfactory, the further development consists 
+in adding functionality around it. It defers from Prototyping because prototypes
+just give a glance of the user experience and are completely disposable. But the
+tracer bullets keeps at the codebase.
+
+> “The distinction is important enough to warrant repeating. Prototyping generates disposable code. Tracer code is lean but complete, and forms part of the skeleton of the final system. Think of prototyping as the reconnaissance and intelligence gathering that takes place before a single tracer bullet is fired.”
+> 
+> Fragmento de: Hunt, Andrew;Thomas, David. “The Pragmatic Programmer: From Journeyman to Master”. iBooks. 
+
+### 10/11/2015
+
+#### EOI
+
+* They gave me some present (ACTIVE)
+    * Some presents were fiven to me.
+    * I was given some presents (more common)
+
+* On or at:
+    * I was given some presents on Christmas' eve. (Use *on* for specific time)
+    * I was given any presents at Christmas.
+
+* stunt -> very exciting action
