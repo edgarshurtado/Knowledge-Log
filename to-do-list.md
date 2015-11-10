@@ -24,8 +24,11 @@
 
 ## Blog Posts
 
+* [Awesome JS Autocompletion](http://tilvim.com/2013/08/21/js-autocomplete.html)
 * [EventTarget.addEventListener()](https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener)
 * [Choose the Right Web Hosting](http://www.webhostingsecretrevealed.net/choose-the-right-web-hosting/)
+* [Element classList](https://developer.mozilla.org/en-US/docs/Web/API/Element/classList)
+* [Using data attributes](https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/Using_data_attributes)
 * [Callbacks. JS for cats](http://jsforcats.com/#callbacks)
 * [Boilerplate code](https://en.wikipedia.org/wiki/Boilerplate_code)
 * [GitHub does dotfiles](https://dotfiles.github.io/)
