@@ -1,6 +1,7 @@
 ## Books
 
 * [The pragmatic programmer](http://www.amazon.com/The-Pragmatic-Programmer-Journeyman-Master/dp/020161622X) (In progress...)
+* [Intermediate Python](https://leanpub.com/intermediatepython)
 * [Learn Python the Hard Way](http://learnpythonthehardway.org/book/)
 * [Eloquent JavaScript](http://eloquentjavascript.net/)
 * [JavaScript: The Good Parts](http://www.amazon.com/gp/product/0596517742/ref=as_li_tl?ie=UTF8&camp=1789&creative=390957&creativeASIN=0596517742&linkCode=as2&tag=ericleads-20&linkId=2DWOTC3SBWNMRXDK)
