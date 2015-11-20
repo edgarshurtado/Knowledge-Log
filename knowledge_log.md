@@ -503,3 +503,76 @@ completely disposable. But the tracer bullets keeps at the codebase.
 * *Domain Languages* -> Pseudo or mini languages that are used to abstract the
 implementation of a program but indicate the steps that are needed for the real
 solution
+
+## Bug with wifi share
+* It happened to me that because of I was in class sharing wifi. Then, at home
+my wifi connection didn't work. To fix it I had to connect the rj45, then go to
+wifi share and disable it.
+
+#16/11/2015
+## Despliegue de aplicaciones
+* El SMTP es un canal de comunicación bidireccional entre servidores.
+* El IMAP/POP3 es el canal de comunicación entre servidor y cliente.
+* La história de HOTMAIL:
+    - Cuál fué la idea inicial?
+        * Poder acceder a el inbox desde cualquier parte del mundo
+    - En qué año?
+        * Fue lanzado en 1996
+    - Cuantos trabajaban en el ppi?
+        * Sólo 2. Sabeer Bhatia y Jack Smith
+    - Quién, cuanto y por cuanto se compró?
+        * Microsoft lo compró en 1997 por 400 millones de $
+    - Cuáles crees que fueron las causas del éxito?
+        * Acceso al inbox desde cualquier punto del mundo, y después su
+        integración con todo el ecosistema MSN de Microsoft.
+
+## [The Single Biggest Mistake Programmers Make Every Day](https://medium.com/javascript-scene/the-single-biggest-mistake-programmers-make-every-day-62366b432308)
+* The process for developing should be: *Make it work, make it right, make it
+fast*
+
+## [5 Reasons Why Swift is Perfect for Beginners](http://learn.onemonth.com/5-reasons-swift-is-perfect-for-beginners?utm_source=twitter&utm_medium=social&utm_campaign=sumome_share)
+* Apple is going to make Swift open-source
+
+# 17/11/2015
+## EOI
+* electrical appliances = hosehold appliances = white goods -->
+Electrodomésticos
+* instalment -> Episode
+* to pay by instalments -> Pagar a plazos
+* leisure -> free time
+
+#18/11/2015
+## Trouble-shooting solarized broken color in tmux
+
+I had a problem that made vim represent solarized colors badly when running
+in tmux. To fix it I just need to create a *.tmux.conf* file with the following
+line:
+
+```
+set -g default-terminal "screen-256color"
+```
+
+For more information and other solutions you can read this 
+[github issue](https://github.com/altercation/solarized/issues/159)
+
+## Set mailx to send emails with gmail account
+* Follow the instructions on [this post](http://owleon.blogspot.com.es/2014/11/command-line-mail-with-gmail-smtp-on.html)
+
+#19/11/2015
+##EOI
+* scenary = landscape = paisaje.
+* you're always dragging your children = Simpre llevas a los niños arrastrándo
+* get away from it all! -> Escaparse
+* unwind -> desconectar
+*Board Games*
+* draughts -> damas
+* ludo -> Parchis
+*snakes and ladders = juego de la oca
+
+#20/11/2015
+## get the css properties from an external css file
+
+```var style = window.getComputedStyle(element, pseudoElt);```
+* [Docs](https://developer.mozilla.org/es/docs/Web/API/Window/getComputedStylehll)
+
+
