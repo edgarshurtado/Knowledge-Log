@@ -207,8 +207,7 @@ $this->load->library('encrytp');
         * How many chocolates have you eaten?
         * What have you been doing?
 
-* CodeNewbie thread [Windows vs Mac for
-  coding](http://discourse.codenewbie.org/t/windows-vs-mac-for-coding/1317/5)
+* CodeNewbie thread [Windows vs Mac for coding](http://discourse.codenewbie.org/t/windows-vs-mac-for-coding/1317/5)
 
 > If you do webdev, having easy access to software which works similar to the
 > vast majority of servers out there is handy. Additionally, if you need to
@@ -249,27 +248,33 @@ formularios mediante index. La manera correcta sería mediante ID
 
 ### 4/11/2015
 
-Pushbullet chrome plugin causes a [pasteboard
-issue](https://discussions.apple.com/message/27250427#27250427)
+Pushbullet chrome plugin causes a [pasteboard issue](https://discussions.apple.com/message/27250427#27250427)
 
-Delete all files without extension from bash ```bash $ find . -type f  ! -name
-"*.*"  -delete ``` 
+Delete all files without extension from bash 
+```
+bash $ find . -type f  ! -name
+"*.*"  -delete 
+``` 
 
-Compile and execute C from terminal ```bash $ gcc -o compiled_file_name
-source_file.c $ ./compiled_file_name ```
+Compile and execute C from terminal 
+```
+bash $ gcc -o compiled_file_name
+source_file.c $ ./compiled_file_name 
+```
 
 Resize a tmux split to full window `ctr-B + z`
 
 Close files in vim without quiting vim `:bd` 
 
-Know if the web browser es Internet Explorer ```javascript var ie =
-navigator.userAgent.toLowerCase().indexOf('msie')!=-1; ```
+Know if the web browser es Internet Explorer 
+```
+javascript var ie = navigator.userAgent.toLowerCase().indexOf('msie')!=-1; 
+```
 
 Big fail done by mysefl: `var x-coords = ...` instead of `var x_coords = ...` I
 lost too much time debuggin this =(
 
-#### EiE Inflación : aumento del coste de vida con respecto al aumento de la
-productividad del país
+#### EiE Inflación : aumento del coste de vida con respecto al aumento de la productividad del país
 
 Puede ser que queramos buscar a la competencia. Eso es porque estando ahí la
 gente seguro que pasará ya sea para comprarme a mí o a la competencia, pero se
@@ -305,6 +310,7 @@ El cliente pide y recibe información por protocolo `tcp` pero el servidor por
     * No obstante este es más rápido que el tcp y gasta menos recursos
 
 #### Pragmatic programmer
+
 * Quality as one of the proyect requirements. Look for the Good Enough Software
 * Don't do big changes all at once but gradually implement them
 * Don't lose the big picture and react quickly to the signs of something going
@@ -346,8 +352,9 @@ El cliente pide y recibe información por protocolo `tcp` pero el servidor por
 For being able to work with utf-8 characters, when stablishing the connection
 add:
 
-```php <?php $dbh = new PDO('mysql:host=localhost;dbname=test', $user, $pass);
-?> ```
+```
+<?php $dbh = new PDO('mysql:host=localhost;dbname=test', $user, $pass); ?>
+ ```
 
 This add `dbname=test` to the `dsn` example in the PDO docs whitch doesn't work
 for retrieving data in utf-8 [source](http://stackoverflow.com/a/11249695)
@@ -378,11 +385,11 @@ for retrieving data in utf-8 [source](http://stackoverflow.com/a/11249695)
 * Make critical no reversible decisions. Implement things to dependent of the
   caracteristics at the time of development
 
->“The mistake lies in assuming that any decision is cast in stone—and in not
->preparing for the contingencies that might arise”
+> “The mistake lies in assuming that any decision is cast in stone—and in not
+> preparing for the contingencies that might arise”
 >
->Fragmento de: Hunt, Andrew;Thomas, David. “The Pragmatic Programmer: From
->Journeyman to Master”.
+> Fragmento de: Hunt, Andrew;Thomas, David. “The Pragmatic Programmer: From
+> Journeyman to Master”.
 
 * Use *tracer bullets*: rudimentary software that works for giving a real user
   experience. This technique is based on implementing a not fully functional
@@ -419,10 +426,10 @@ completely disposable. But the tracer bullets keeps at the codebase.
 * clay -> barro
 
 > Prototyping is a learning experience. Its value lies not in the code produced,
->but in the lessons learned. That's really the point of prototyping.”
+> but in the lessons learned. That's really the point of prototyping.”
 >
->Fragmento de: Hunt, Andrew;Thomas, David. “The Pragmatic Programmer: From
->Journeyman to Master”.
+> Fragmento de: Hunt, Andrew;Thomas, David. “The Pragmatic Programmer: From
+> Journeyman to Master”.
 
 * Things that can be ignored in prototyping:
     * Correctness (use dummy data)
@@ -449,6 +456,7 @@ completely disposable. But the tracer bullets keeps at the codebase.
 
 ### 12/11/2015
 #### EOI
+
 * Correcting the letter exercise
     * with regard for --> with regard to
     * properly wahsed --> properly cleaned
@@ -526,11 +534,11 @@ wifi share and disable it.
         * Acceso al inbox desde cualquier punto del mundo, y después su
         integración con todo el ecosistema MSN de Microsoft.
 
-## [The Single Biggest Mistake Programmers Make Every Day](https://medium.com/javascript-scene/the-single-biggest-mistake-programmers-make-every-day-62366b432308)
+[The Single Biggest Mistake Programmers Make Every Day](https://medium.com/javascript-scene/the-single-biggest-mistake-programmers-make-every-day-62366b432308)
 * The process for developing should be: *Make it work, make it right, make it
 fast*
 
-## [5 Reasons Why Swift is Perfect for Beginners](http://learn.onemonth.com/5-reasons-swift-is-perfect-for-beginners?utm_source=twitter&utm_medium=social&utm_campaign=sumome_share)
+[5 Reasons Why Swift is Perfect for Beginners](http://learn.onemonth.com/5-reasons-swift-is-perfect-for-beginners?utm_source=twitter&utm_medium=social&utm_campaign=sumome_share)
 * Apple is going to make Swift open-source
 
 # 17/11/2015
