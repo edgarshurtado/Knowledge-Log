@@ -575,4 +575,129 @@ For more information and other solutions you can read this
 ```var style = window.getComputedStyle(element, pseudoElt);```
 * [Docs](https://developer.mozilla.org/es/docs/Web/API/Window/getComputedStylehll)
 
+#23/11/2015
+## See files in track in git
+```git ls-files```
 
+## Despliegue de aplicaciones web
+### Pasar un dominio de una empresa registradora a otra
+1. Pedir el **autocode** en la registradora origen
+    - Hay que hacerlo antes de que empiece el periodo de autorenovación
+2. Darte de alta en la destinataria pasándole tus datos junto al autocode
+
+### Sockets
+Ventajas:
+* Necesidad de instalar únicamente una vez el servidor
+* Flexibilidad
+
+La parte de Java que se baja y ejecuta en la parte cliente es conocida como 
+applet. Es **bytecode** descargado desde el servidor.
+
+Al crear el socket servidor diremos el puerto por el que trabajaremos y cuando
+creemos el socket del servidor especificamos también el ip del servidor.
+
+Los socket consumen recursos, motivo por el cual se realizan los ataques ddos.
+Se basan en crear sockets hasta desbordar el servidor.
+
+Las 2 principales librerías para hacer sockets:
+* java.io
+* java.net
+
+#24/11/2015
+## EOI
+hooked on = adicted to.
+
+###Used to/would:
+* when I was a child I **used to** + **infinitive**
+* My grandfather would sit in front of the T.V. every Sunday to watch
+bullfighting
+
+* When I was a child I used to read a hole book while my mother and grandmother
+where shopping
+
+###Be used to + **ing**
+* I'm used to getting up early.
+
+* I'm used to working mostly on my computer
+
+###To get used to
+* I am getting used to **eating** healthy food
+
+* My grandmother has got used to sending whatsapps whith her friends.
+
+* The internet
+    - Don't forget the article **the**
+
+* Niche holiday
+    - Holidays for people with particular interest
+* Flopout holiday
+    - Holidays in which you do nothing but relax
+        * Like sunbathing (lying in the sun)
+
+#26/11/2015
+##EOI
+Like-minded people: People with similar interest
+
+Self-catering accomodation : You provide food for yourself, and you have to cook it.
+
+Travelling broadens the mind -> Viajar abre la mente
+
+* Palm tree holidays -> vacaciones de playa
+* Package holidays -> Vacaciones de todo incluído
+* Camp-site holidays -> Acampada
+* Potholing -> espeleología
+* Scuba diving -> buceo
+* Bungee-jumping -> Puenting
+
+unspoilt place -> virgin place
+
+**Travel** is a verb and a noun, but as a noun it is a general word usually
+uncountable. We can't say **a travel**
+
+Leaflet -> panfleto (propaganda)
+
+Full-boarding -> pensión completa
+###p36 ex 4a
+2. Are you going to do// Yes we're going to 
+3. The plane lands// we get
+4. It's likely to rain//It'll be//I'll check
+5. We might go // we could stop off
+6. Is thinking in going // He's hopping to ask
+
+###p37 6B
+* Ecotour
+* Location
+    - National Park of Monfrague
+* Arrange little buses for little groups
+* Easter holiday
+* 1 night in a rural house and 1 night camping in the wildness
+* Bird-watching, hicking, night songs
+
+#29-11-2015
+## Match whitespace in RegExp in JS
+```new RegExp("\\s", "g")```
+
+I have to use \\s instead of \s when using this constructor
+
+#30/12/2015
+## Grocery_CRUD issue with set_relation
+Can't have 2 tables with a field named the same way used with set_relation
+[explanation](http://www.grocerycrud.com/forums/topic/254-set-relation-breaks-processing-of-field-with-same-name-returned/#entry10005)
+
+## Pragmatic programer
+Use codegenerators and textprocesors
+
+
+#2/12/2015
+# Create globally executable python scripts
+[source](http://stackoverflow.com/questions/15587877/run-a-python-script-in-terminal-without-the-python-command)
+
+## Make python run gitignore.io (to test)
+sudo vim /usr/local/bin/gi
+curl -L -s https://www.gitignore.io/api/\$@
+Permisos y ale. Y si ahí no va, pues en /usr/bin/
+
+#6/12/2015
+## Config apache for override urls
+[apache.org](http://httpd.apache.org/docs/2.4/mod/core.html#allowoverride)
+set AllowOverride from none to all
