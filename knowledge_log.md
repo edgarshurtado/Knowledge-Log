@@ -709,3 +709,17 @@ Permisos y ale. Y si ahí no va, pues en /usr/bin/
 ## Config apache for override urls
 [apache.org](http://httpd.apache.org/docs/2.4/mod/core.html#allowoverride)
 set AllowOverride from none to all
+
+#8/12/2015
+## Code Igniter Error: No input file specified
+add the ? sign after index.php in the .htaccess file
+[source](http://stackoverflow.com/questions/6118740/codeigniter-no-input-file-specified)
+
+#9/12/2015
+## Barcelona abre un grado en Bioinformática
+[fuente](http://www.bsc.es/sites/default/files/public/about/news/bib-10052015-lavanguardia.pdf)
+
+#11/12/2015
+## Pragmatic Programer
+* Don't turn off assertions when ship code. If it's needed a better performance
+in the code just turn off the assertions you need, but don't every of them.
