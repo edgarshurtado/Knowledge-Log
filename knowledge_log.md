@@ -217,6 +217,7 @@ $this->load->library('encrytp');
 >[Cory_Underwood](http://discourse.codenewbie.org/users/Cory_Underwood)
 
 #### Pragmatic programmer
+
     * Unforeseen -> imprevisto
     * shortcomings -> defectos
     * My cat Ate my Code
@@ -576,17 +577,22 @@ For more information and other solutions you can read this
 *Board Games*
 * draughts -> damas
 * ludo -> Parchis
-*snakes and ladders = juego de la oca
+* snakes and ladders = juego de la oca
 
 #20/11/2015
 ## get the css properties from an external css file
 
-```var style = window.getComputedStyle(element, pseudoElt);```
+```
+    var style = window.getComputedStyle(element, pseudoElt);
+```
+
 * [Docs](https://developer.mozilla.org/es/docs/Web/API/Window/getComputedStylehll)
 
 #23/11/2015
 ## See files in track in git
-```git ls-files```
+```
+    git ls-files
+```
 
 ## Despliegue de aplicaciones web
 ### Pasar un dominio de una empresa registradora a otra
@@ -666,7 +672,9 @@ uncountable. We can't say **a travel**
 Leaflet -> panfleto (propaganda)
 
 Full-boarding -> pensión completa
+
 ###p36 ex 4a
+
 2. Are you going to do// Yes we're going to 
 3. The plane lands// we get
 4. It's likely to rain//It'll be//I'll check
@@ -684,7 +692,9 @@ Full-boarding -> pensión completa
 
 #29-11-2015
 ## Match whitespace in RegExp in JS
-```new RegExp("\\s", "g")```
+```
+new RegExp("\\s", "g")
+```
 
 I have to use \\s instead of \s when using this constructor
 
@@ -724,3 +734,66 @@ add the ? sign after index.php in the .htaccess file
 ## Pragmatic Programer
 * Don't turn off assertions when ship code. If it's needed a better performance
 in the code just turn off the assertions you need, but don't every of them.
+
+#13/12/2015
+## Pragmatic Programmer
+* Deallocate resources in the opposite order to that in which you allocate them. That way you won't orphan resources if one resource contains references to another.”
+
+##Align form elements
+```
+    <form class="user-form">
+        <div class="field">
+            <label for="firstname">First Name:</label>
+            <input name="firstname" type="text" size="50" autofocus />
+        </div>
+        <div class="field">
+            <label for="lastname">Last Name:</label>
+            <input type="text" name="lastname" size="50" />
+        </div>
+        <div class="field">
+            <label for="birthdate">Birth Date:</label>
+            <input type="date" name="bdate" size="50" />
+        </div>
+    <form>
+```
+
+```
+    .user-form { padding:20px;  }
+
+    .user-form .field { padding: 4px; margin:1px; background: #eee;  }
+
+    .user-form .field label { display:inline-block; width:120px; margin-left:5px;  }
+
+    .user-form .field input { display:inline-block;  }
+```
+
+[Aligning HTML5 form elements](http://stackoverflow.com/questions/17825979/aligning-html5-form-elements)
+
+## Div element size doesn't increase if it has floated elements
+[StackOverflow ask](http://stackoverflow.com/questions/16568272/why-doesnt-the-height-of-a-container-element-increase-if-it-contains-floated-el)
+
+The solution is adding a `clear: both;` div after the div with floated elements
+
+# 2015-12-17
+
+## EOI
+Even gift ourselves with **wrong**
+Even treat ourselves **right**
+
+It's just cloth ... **wrong**
+it's just a piece of cloth **wright**
+
+surrogate daughter --> hija adoptiva
+to steer --> conducir
+gap year --> año sabático
+rusty --> oxidado
+
+## Mirando cursos del CIPF
+* 6-04-2016 -> Job opportunities / Carrers in science
+* 11-04-2016 -> Proteomics
+* 13-04-2016 -> Statistical graphics.
+* 11-05-2016 -> Genomics
+* 23-05-2016 -> Developing statistical intuition
+
+## Box Shadow css trick
+[article](https://css-tricks.com/snippets/css/css-box-shadow/)
