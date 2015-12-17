@@ -1,16 +1,21 @@
 ## Books
 
 * [The pragmatic programmer](http://www.amazon.com/The-Pragmatic-Programmer-Journeyman-Master/dp/020161622X) (In progress...)
+* [You Don't Know JS: Up & Going](https://github.com/getify/You-Dont-Know-JS/blob/master/up%20&%20going/README.md#you-dont-know-js-up--going)
+* [You Don't Know JS: Scope & Closures](https://github.com/getify/You-Dont-Know-JS/blob/master/scope%20&%20closures/README.md#you-dont-know-js-scope--closures)
+* [You Don't Know JS: this & Object Prototypes](https://github.com/getify/You-Dont-Know-JS/blob/master/this%20&%20object%20prototypes/README.md#you-dont-know-js-this--object-prototypes)
+* [You Don't Know JS: Types & Grammar](https://github.com/getify/You-Dont-Know-JS/blob/master/types%20&%20grammar/README.md#you-dont-know-js-types--grammar)
+* [You Don't Know JS: Async & Performance](https://github.com/getify/You-Dont-Know-JS/blob/master/async%20&%20performance/README.md#you-dont-know-js-async--performance)
+* [You Don't Know JS: ES6 & Beyond](https://github.com/getify/You-Dont-Know-JS/blob/master/es6%20&%20beyond/README.md#you-dont-know-js-es6--beyond)
 * [Intermediate Python](https://leanpub.com/intermediatepython)
 * [Learn Python the Hard Way](http://learnpythonthehardway.org/book/)
+* [Professional JavaScript](http://shop.oreilly.com/product/9781118026694.do)
 * [Eloquent JavaScript](http://eloquentjavascript.net/)
 * [JavaScript: The Good Parts](http://www.amazon.com/gp/product/0596517742/ref=as_li_tl?ie=UTF8&camp=1789&creative=390957&creativeASIN=0596517742&linkCode=as2&tag=ericleads-20&linkId=2DWOTC3SBWNMRXDK)
 * [Pro Git](http://git-scm.com/book/en/v2)
 * [HTML & CSS. Design and build websites](http://www.htmlandcssbook.com/)
 * [Data science from scratch](http://shop.oreilly.com/product/0636920033400.do)
 * [Bioinformatics for Biologists](http://cseweb.ucsd.edu/~ppevzner/B4B/)
-* [PHP, MySQL, JavaScript & CSS](http://shop.oreilly.com/product/0636920023487.do)
-* [Sublime Power User](https://sublimetextbook.com/)
 * [97 things every computer programmer shoud know](http://programmer.97things.oreilly.com/wiki/index.php/Contributions_Appearing_in_the_Book)
 * [How to design programs](http://htdp.org/)
 * [RegEx the HardWay](http://regex.learncodethehardway.org/book/)
@@ -22,6 +27,7 @@
 * [Python for Bioinformatics](http://www.amazon.es/Bioinformatics-Chapman-Mathematical-Computational-Biology/dp/1584889292)
 * [Clean Code](http://www.amazon.es/Clean-code-Handbook-Software-Craftsmanship/dp/0132350882)
 * [Mindful Geek](http://www.amazon.com/dp/0692475389/ref=cm_sw_su_dp)
+* [JavaScript Design Patterns](http://addyosmani.com/resources/essentialjsdesignpatterns/book/index.html)
 
 ## Blog Posts
 
@@ -34,7 +40,7 @@
 * [Boilerplate code](https://en.wikipedia.org/wiki/Boilerplate_code)
 * [GitHub does dotfiles](https://dotfiles.github.io/)
 * [Shunting yard algorithm](http://wcipeg.com/wiki/Shunting_yard_algorithm)
-  * [soulchainer response](http://wcipeg.com/wiki/Talk:Shunting_yard_algorithm)
+    - [soulchainer response](http://wcipeg.com/wiki/Talk:Shunting_yard_algorithm)
 * [Problemas codificacion web. Configurar codificación utf8 php, mysql y html](https://www.pedroventura.com/php/problemas-codificacion-web-configurar-codificacion-utf8-php-mysql-y-html/)
 * [Understanding Python Decorators](http://simeonfranklin.com/blog/2012/jul/1/python-decorators-in-12-steps/)
 * [You can learn to code well enough to get a job in as little as 5 months](https://twitter.com/_ericelliott/status/660089011470516224)
@@ -61,7 +67,11 @@
 * [MongoDB for Node.js developers](https://university.mongodb.com/courses/M101JS/about)
 * [MongoDB for Developers](https://university.mongodb.com/courses/M101P/about)
 * [Bioinformatics specialization](https://www.coursera.org/specialization/bioinformatics/34)
+* [Intro to algorithms](https://www.udacity.com/course/intro-to-algorithms--cs215)
+* [The Command Line Crash Course](http://cli.learncodethehardway.org/book/)
 
 ## Videos
 
 * [Classical Inheritance is Obsolete](https://vimeo.com/69255635)
+* [Coding Math](http://www.codingmath.com/?paged=7)
+* [JavaScript higher order functions](https://www.youtube.com/watch?v=BMUiFMZr7vk&list=PL0zVEGEvSaeEd9hlmCXrk5yUyqUag-n84)
