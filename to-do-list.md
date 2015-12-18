@@ -1,6 +1,7 @@
 ## Books
 
 * [The pragmatic programmer](http://www.amazon.com/The-Pragmatic-Programmer-Journeyman-Master/dp/020161622X) (In progress...)
+* [Learn Python the Hard Way](http://learnpythonthehardway.org/book/)
 * [You Don't Know JS: Up & Going](https://github.com/getify/You-Dont-Know-JS/blob/master/up%20&%20going/README.md#you-dont-know-js-up--going)
 * [You Don't Know JS: Scope & Closures](https://github.com/getify/You-Dont-Know-JS/blob/master/scope%20&%20closures/README.md#you-dont-know-js-scope--closures)
 * [You Don't Know JS: this & Object Prototypes](https://github.com/getify/You-Dont-Know-JS/blob/master/this%20&%20object%20prototypes/README.md#you-dont-know-js-this--object-prototypes)
@@ -8,7 +9,6 @@
 * [You Don't Know JS: Async & Performance](https://github.com/getify/You-Dont-Know-JS/blob/master/async%20&%20performance/README.md#you-dont-know-js-async--performance)
 * [You Don't Know JS: ES6 & Beyond](https://github.com/getify/You-Dont-Know-JS/blob/master/es6%20&%20beyond/README.md#you-dont-know-js-es6--beyond)
 * [Intermediate Python](https://leanpub.com/intermediatepython)
-* [Learn Python the Hard Way](http://learnpythonthehardway.org/book/)
 * [Professional JavaScript](http://shop.oreilly.com/product/9781118026694.do)
 * [Eloquent JavaScript](http://eloquentjavascript.net/)
 * [JavaScript: The Good Parts](http://www.amazon.com/gp/product/0596517742/ref=as_li_tl?ie=UTF8&camp=1789&creative=390957&creativeASIN=0596517742&linkCode=as2&tag=ericleads-20&linkId=2DWOTC3SBWNMRXDK)
@@ -16,8 +16,6 @@
 * [HTML & CSS. Design and build websites](http://www.htmlandcssbook.com/)
 * [Data science from scratch](http://shop.oreilly.com/product/0636920033400.do)
 * [Bioinformatics for Biologists](http://cseweb.ucsd.edu/~ppevzner/B4B/)
-* [97 things every computer programmer shoud know](http://programmer.97things.oreilly.com/wiki/index.php/Contributions_Appearing_in_the_Book)
-* [How to design programs](http://htdp.org/)
 * [RegEx the HardWay](http://regex.learncodethehardway.org/book/)
 * [How to think as a computer scientist](http://openbookproject.net/thinkcs/python/english3e/)
 * [SQL Antipatterns](https://pragprog.com/book/bksqla/sql-antipatterns)
@@ -25,9 +23,11 @@
 * [Dive into Python 3](http://www.diveintopython3.net/)
 * [Biopython](http://biopython.org/DIST/docs/tutorial/Tutorial.html)
 * [Python for Bioinformatics](http://www.amazon.es/Bioinformatics-Chapman-Mathematical-Computational-Biology/dp/1584889292)
-* [Clean Code](http://www.amazon.es/Clean-code-Handbook-Software-Craftsmanship/dp/0132350882)
 * [Mindful Geek](http://www.amazon.com/dp/0692475389/ref=cm_sw_su_dp)
 * [JavaScript Design Patterns](http://addyosmani.com/resources/essentialjsdesignpatterns/book/index.html)
+* [Clean Code](http://www.amazon.es/Clean-code-Handbook-Software-Craftsmanship/dp/0132350882)
+* [How to design programs](http://htdp.org/)
+* [97 things every computer programmer shoud know](http://programmer.97things.oreilly.com/wiki/index.php/Contributions_Appearing_in_the_Book)
 
 ## Blog Posts
 
