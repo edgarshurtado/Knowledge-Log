@@ -797,3 +797,9 @@ rusty --> oxidado
 
 ## Box Shadow css trick
 [article](https://css-tricks.com/snippets/css/css-box-shadow/)
+
+# 2015-12-18
+## Pragmatic Programmer
+* Architecture the programs as independent services and plan for concurrency.
+Even though we don't need to do this it makes possible the scalability of the
+application and gives a cleaner code.
