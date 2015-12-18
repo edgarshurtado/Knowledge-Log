@@ -31,20 +31,14 @@
 
 ## Blog Posts
 
-* [Awesome JS Autocompletion](http://tilvim.com/2013/08/21/js-autocomplete.html)
 * [EventTarget.addEventListener()](https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener)
-* [Choose the Right Web Hosting](http://www.webhostingsecretrevealed.net/choose-the-right-web-hosting/)
 * [Element classList](https://developer.mozilla.org/en-US/docs/Web/API/Element/classList)
 * [Using data attributes](https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/Using_data_attributes)
 * [Callbacks. JS for cats](http://jsforcats.com/#callbacks)
 * [Boilerplate code](https://en.wikipedia.org/wiki/Boilerplate_code)
 * [GitHub does dotfiles](https://dotfiles.github.io/)
-* [Shunting yard algorithm](http://wcipeg.com/wiki/Shunting_yard_algorithm)
-    - [soulchainer response](http://wcipeg.com/wiki/Talk:Shunting_yard_algorithm)
 * [Problemas codificacion web. Configurar codificación utf8 php, mysql y html](https://www.pedroventura.com/php/problemas-codificacion-web-configurar-codificacion-utf8-php-mysql-y-html/)
 * [Understanding Python Decorators](http://simeonfranklin.com/blog/2012/jul/1/python-decorators-in-12-steps/)
-* [You can learn to code well enough to get a job in as little as 5 months](https://twitter.com/_ericelliott/status/660089011470516224)
-* [Setting up Sublime for Python Development](https://dbader.org/blog/setting-up-sublime-text-for-python-development)
 
 ## Courses
 
