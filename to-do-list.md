@@ -72,6 +72,5 @@
 
 ## Videos
 
-* [Classical Inheritance is Obsolete](https://vimeo.com/69255635)
 * [Coding Math](http://www.codingmath.com/?paged=7)
 * [JavaScript higher order functions](https://www.youtube.com/watch?v=BMUiFMZr7vk&list=PL0zVEGEvSaeEd9hlmCXrk5yUyqUag-n84)
