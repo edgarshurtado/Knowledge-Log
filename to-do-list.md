@@ -28,6 +28,7 @@
 * [Clean Code](http://www.amazon.es/Clean-code-Handbook-Software-Craftsmanship/dp/0132350882)
 * [How to design programs](http://htdp.org/)
 * [97 things every computer programmer shoud know](http://programmer.97things.oreilly.com/wiki/index.php/Contributions_Appearing_in_the_Book)
+* [Introduction to Algorithms](http://www.amazon.com/Introduction-Algorithms-Edition-Thomas-Cormen/dp/0262033844)
 
 ## Blog Posts
 
