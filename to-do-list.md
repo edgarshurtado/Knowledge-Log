@@ -29,6 +29,7 @@
 * [How to design programs](http://htdp.org/)
 * [97 things every computer programmer shoud know](http://programmer.97things.oreilly.com/wiki/index.php/Contributions_Appearing_in_the_Book)
 * [Introduction to Algorithms](http://www.amazon.com/Introduction-Algorithms-Edition-Thomas-Cormen/dp/0262033844)
+* [Automate the boring stuff with Python](https://automatetheboringstuff.com/)
 
 ## Blog Posts
 
