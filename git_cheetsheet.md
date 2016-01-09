@@ -36,8 +36,8 @@ $ git commit -c ORIG_HEAD                                   (5)
 [Source](http://stackoverflow.com/questions/927358/how-do-you-undo-the-last-commit)
 
 ## Process to contribute and solve merge conflicts:
-1 Make changes on a local branch
-2 pull Master to be up-to-date
-3 merge master into you branch
-4 push your branch
-5 pull request to merge.
+1. Make changes on a local branch
+2. pull Master to be up-to-date
+3. merge master into you branch
+4. push your branch
+5. pull request to merge.
