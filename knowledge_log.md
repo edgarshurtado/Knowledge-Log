@@ -803,3 +803,8 @@ rusty --> oxidado
 * Architecture the programs as independent services and plan for concurrency.
 Even though we don't need to do this it makes possible the scalability of the
 application and gives a cleaner code.
+
+# 2016-1-09
+## Pragmatic Programmer
+`cron` it's a unix command to schedule processes 
+[wikipedia](https://en.wikipedia.org/wiki/Cron)
