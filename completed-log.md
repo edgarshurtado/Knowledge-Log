@@ -2,6 +2,7 @@
 ## Books
 
 * [Python for informatics](http://www.pythonlearn.com/book.php)
+* [The pragmatic programmer](http://www.amazon.com/The-Pragmatic-Programmer-Journeyman-Master/dp/020161622X)
 
 ## Courses
 
