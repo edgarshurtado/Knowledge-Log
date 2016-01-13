@@ -253,13 +253,16 @@ formularios mediante index. La manera correcta sería mediante ID
 Pushbullet chrome plugin causes a [pasteboard issue](https://discussions.apple.com/message/27250427#27250427)
 
 Delete all files without extension from bash 
-```
+
+```bash
 bash $ find . -type f  ! -name
 "*.*"  -delete 
-``` 
+```
 
 Compile and execute C from terminal 
+
 ```
+
 bash $ gcc -o compiled_file_name
 source_file.c $ ./compiled_file_name 
 ```
@@ -269,8 +272,11 @@ Resize a tmux split to full window `ctr-B + z`
 Close files in vim without quiting vim `:bd` 
 
 Know if the web browser es Internet Explorer 
-```
-javascript var ie = navigator.userAgent.toLowerCase().indexOf('msie')!=-1; 
+
+```javascript
+
+var ie = navigator.userAgent.toLowerCase().indexOf('msie')!=-1; 
+
 ```
 
 Big fail done by mysefl: `var x-coords = ...` instead of `var x_coords = ...` I
@@ -354,7 +360,7 @@ El cliente pide y recibe información por protocolo `tcp` pero el servidor por
 For being able to work with utf-8 characters, when stablishing the connection
 add:
 
-```
+```php
 <?php $dbh = new PDO('mysql:host=localhost;dbname=test', $user, $pass); ?>
  ```
 
@@ -582,7 +588,7 @@ For more information and other solutions you can read this
 #20/11/2015
 ## get the css properties from an external css file
 
-```
+```javascript
     var style = window.getComputedStyle(element, pseudoElt);
 ```
 
@@ -808,3 +814,31 @@ application and gives a cleaner code.
 ## Pragmatic Programmer
 `cron` it's a unix command to schedule processes 
 [wikipedia](https://en.wikipedia.org/wiki/Cron)
+
+# 2016-1-11
+##EOI
+* stretch (as noun) -> tramo
+* tide -> marea
+* strolling -> paseando
+* as time and again -> una y otra vez
+* stranded -> varado (sirve también para decir que alguien se ha quedado tirado
+por ejemplo si el vuelo del avión se cancela)
+* dried up -> seco
+
+## Despliegue de aplicaciones web
+La *capa de enlace* se encarga de garantizar que el canal de transmisión es
+correcto
+Además la capa de enlace sincroniza la velocidad de envío de información
+
+El cómo es con los protocolos, el qué es con las capas
+
+# 2016-1-12
+#EOI
+* New Years Resolution -> Propósitos de año nuevo
+* Drew nearer -> se acercó
+* Heads or Tails -> Cara o cruz
+* Toss up a coin -> lanzar una moneda
+* Safe and sound -> Sano y salvo
+* Pulling my leg -> Tomándome el pelo
+* A bird in the hand is worth two in the bush -> Más vale págaro en mano que
+ciento volando
