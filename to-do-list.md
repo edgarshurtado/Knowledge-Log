@@ -30,6 +30,7 @@
 * [Introduction to Algorithms](http://www.amazon.com/Introduction-Algorithms-Edition-Thomas-Cormen/dp/0262033844)
 * [Automate the boring stuff with Python](https://automatetheboringstuff.com/)
 * [Introducing Regular Expressions](http://shop.oreilly.com/product/0636920012337.do)
+* [Design for Hackers](http://www.amazon.es/Design-Hackers-Reverse-Engineering-Beauty/dp/1119998956)
 
 ## Blog Posts
 
