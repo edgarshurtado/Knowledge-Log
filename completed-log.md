@@ -14,6 +14,7 @@
 * [Automatically reattach tmux session using iTerm2](https://coderwall.com/p/-mumdg/automatically-reattach-tmux-session-using-iterm2)
 * [Understand JavaScript’s “this” With Clarity, and Master It](http://javascriptissexy.com/understand-javascripts-this-with-clarity-and-master-it/)
 * [How Javascript Loading Works - DOMContentLoaded and OnLoad](http://ablogaboutcode.com/2011/06/14/how-javascript-loading-works-domcontentloaded-and-onload/)
+* [Angular 2 versus React: There Will Be Blood](https://medium.freecodecamp.com/angular-2-versus-react-there-will-be-blood-66595faafd51#.8pygb8qqm)
 
 ## Videos
 

@@ -842,3 +842,97 @@ El cómo es con los protocolos, el qué es con las capas
 * Pulling my leg -> Tomándome el pelo
 * A bird in the hand is worth two in the bush -> Más vale págaro en mano que
 ciento volando
+
+# 2016-1-13
+## EOI
+* wade -> andar por el agua
+* sail -> vela
+* dejectedly -> con desánimo
+
+## Servidor
+* jsp -> **Java Server Page** página web generada dinámicamente que combina
+html con java
+* scriplet -> código java presente en un documento jsp
+* directives jsp -> JSP directives provide directions and instructions to the 
+container, telling it how to handle certain aspects of JSP processing. A JSP 
+directive affects the overall structure of the servlet class
+
+## VIM
+Write timestamp quickly on VIM
+```
+:r! date
+```
+[More info](http://superuser.com/questions/451340/how-to-insert-the-date-into-vim)
+
+
+# jueves, 14 de enero de 2016, 09:23:29 CET
+## EOI
+
+* Birds of a feather flock together -> Dios los cría y ellos se juntan
+* When the cat's away the mice will play -> Cuando no está el *jefe* los empleados
+hacen lo que quieren
+* Don't put the cart before the horses -> No empieces la casa por el tejado
+* Don't count your chicken before ther are hatched -> No cantes victoria andtes
+de tiempo
+* Out of sight out of mind -> Ojos que no ven, corazón que no siente.
+* A stich in time saves nine -> Más vale prevenir que curar.
+* There's no smoke without fire -> Cuando el río suena, agua lleva 
+* People who live in glass houses shouldn't throw stones -> Don't say bad things
+about others because it could come back
+* It's no use crying over split milk -> A lo hecho pecho
+* In for a penny in for a pound -> De perdidos al río
+
+## Servidor: Servlets
+* CGI: solicitar datos de un programa ejecutado en un servidor web. CGI 
+especifica un estándar para transferir datos entre el cliente y el programa
+
+
+# viernes, 15 de enero de 2016, 13:51:46 CET
+## Least Common Multiple in python
+
+```python
+from fractions import gcd
+
+def lcm(numbers):
+    return reduce(lambda x, y: (x*y)/gcd(x,y), numbers, 1)
+```
+[source](http://www.enrico-franchi.org/2010/09/nice-functional-lcm-in-python.html)
+
+
+# Mon Jan 18 16:51:43 CET 2016
+## Despliegue aplicaciones Web
+Principal tarea del protocolo IP es el enrutamiento
+Información necesaria para la conexión de 2 ordenadores IP, máscara de subred,
+puerta de enlace (el router).
+
+La información en internet viaja en forma de paquetes (troceada). De esta forma,
+cada paquete puede buscar rutas diferentes para llegar al destino. Así no hay
+líneas dedicadas. Si en algún momento un nodo callera, el protocolo ip es capaz
+de redirigir los paquetes (siempre en la ruta que menos congestione la red). 
+Además, una vez en el destino, el protocolo IP se encarga de reordenar los 
+paquetes para que formar el archivo que ha sido enviado.
+
+
+La negociación de una clave de sesión depende de la capa de presentación.
+
+El concepto de **procesos** aparece en la capa de transporte, ya que un puerto
+es la forma de identificar un proceso en una IP determinada.
+
+Aunque parezca que las capas hablan entre ellas de forma horizontal, no es
+cierto, sino que es vertical.
+
+En una conexión tipo TCP, cada paquete recibido genera un mensaje respuesta 
+desde el cliente (ACK).
+
+Cuando se manda información, a medida que bajamos en la arquitectura TCP/IP se
+le va añadiendo información que necesitan (los headers).
+
+
+# Wed Jan 20 00:23:35 CET 2016
+
+## Avoid jslint error message when using jquery
+Add this to the top of the js file
+```
+/*jslint browser: true*/
+/*global $, jQuery, alert*/
+```
