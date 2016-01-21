@@ -936,3 +936,33 @@ Add this to the top of the js file
 /*jslint browser: true*/
 /*global $, jQuery, alert*/
 ```
+
+# Wed Jan 20 18:14:55 CET 2016
+## EIE
+
+La SA ha de tener un grupo designado para la revisión de las cuentas de la
+empresa.
+
+## Despliegue de Aplicaciones
+### Protocolos de interconexión
+* *OSI* Modelo oberto y estándard de interconexión
+* *SNA* Utilizada por algunos organismos debido a motivos de seguridad (entre
+los motivos es porque es poco conocida).
+* *TCP/IP*
+* *ARCNET*
+* *DNA*
+### Nombre de las unidades de datos en cada capa OSI
+* *Física* : Bits
+* *Enlace* : Frames/Tramas
+* *Red*: Packages/Paquetes
+* *Transporte*: Segments/Segmentos
+* *Sesión, presentación y aplicación*: Data
+
+### Protocolos
+Aunque también se puede hablar de protocolos en la capa física, los protocolos
+propiamente dichos empiezan en la capa de enlace.
+
+* Enlace -> Ethernet, Wifi, Fast Ethernet, Gigabit Ethernet, PPP, ATM, HDLC
+* Red -> IP, Appletalk, NetBEUI (Microsoft), IPX
+* Transporte -> TCP, UDP, SPX
+* Sesion -> NetBIOS
