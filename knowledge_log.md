@@ -966,3 +966,47 @@ propiamente dichos empiezan en la capa de enlace.
 * Red -> IP, Appletalk, NetBEUI (Microsoft), IPX
 * Transporte -> TCP, UDP, SPX
 * Sesion -> NetBIOS
+
+# Thu Jan 21 09:22:36 CET 2016
+## EOI
+### Grammar photocopy to practice wishes and regrets
+* Start
+    * I whish I hadn't stayied that long on David's.
+    * I whish I could have seen an elephant.
+    * I whish I didn't have to work today.
+    * I whish you wouldn't be always late.
+    * I wish I was taller.
+* I wish I haven't accepted to run with my classmate.
+    - I wish I wasn't talked like that.
+    - I wish I had fixed the door.
+    - I wish I had someone to went tracking with.
+    - I wish I could dance salsa.
+    - I wish I had another seat.
+* I wish I had started to code earlier .
+    - If only I had brought with me something to eat.
+    - If only those photos had burnt.
+    - If only I had a flatmate who pull his weight.
+    - If only I had saved enought money to pay the taxes.
+    - If only I had learnt to play the guitar.
+* I wish I could live with my girlfriend.
+    - I wish I had done a backup of my files.
+    - If only I had been born in America.
+    - I should've saved more money.
+    - I should've brought my umbrella.
+*
+    - If only I had felt ill other day.
+    - I wish he had already washed his hair.
+    - I wish I had taken the elevator.
+    - I wish I had thrown something heavier at him.
+    - If only my partner wouldn't be such a coward.
+* 
+    - If only I had enjoyed life more.
+    - I should've been more sociable when I was young.
+    - I should've bought an extra battery.
+
+### Other
+* multi-word phrases -> phrasal verbs
+    
+## Cliente
+* Cuando hacemos un método *get* la información se manda por la **URL**, cuando el 
+método es POST la información se manda por la **cabecera HTML**

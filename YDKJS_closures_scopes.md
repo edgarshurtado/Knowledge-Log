@@ -21,6 +21,20 @@ one in the outter scope.
     - Reason: Optimization during compilation can't be done if there's some val
 or with in the code.
 
+# Chapter 3. Function vs. Block Scope.
+* function-expression: functions that are automatically executed and that its
+name is just accesible inside the function scope, which means that the name of
+the function doesn't *pollute* the global scope.
+
+```javascript
+(function foo(){ // <-- insert this
+
+    var a = 3;
+    console.log( a  ); // 3
+
+ })(); // <-- and this
+```
+
 # Vocabulary
 * quirks -> peculiaridades
 * fliquering -> parpadenate
