@@ -1010,3 +1010,52 @@ propiamente dichos empiezan en la capa de enlace.
 ## Cliente
 * Cuando hacemos un método *get* la información se manda por la **URL**, cuando el 
 método es POST la información se manda por la **cabecera HTML**
+
+# Mon Jan 25 16:39:24 CET 2016
+## Despliegue aplicaciones web
+### Práctica Apache
+
+Los archivos que son pedidos con una extensión php o phtml, el servidor apache lo
+envía al intérprete php que tenga el servidor instalado y cuando este le devuelve
+al apache el html, esto es lo que se envía al cliente que haya hecho la petición.
+
+# Tue Jan 26 10:03:47 CET 2016
+## EOI
+* A british sitcom -> situational comedy -> soap opera
+* sends shivers up my spine -> me da escalofríos
+* pull aside -> lo aparta / echar a un lado
+* blink -> parpadear
+* wink at me -> guiñar un ojo
+* gutted -> disappointed
+
+
+# Fri Jan 29 20:41:09 CET 2016
+## CSS
+Center an image in the line:
+```css
+ IMG.displayed {
+    display: block;
+    margin-left: auto;
+    margin-right: auto } 
+```
+
+[source](https://www.w3.org/Style/Examples/007/center.en.html)
+
+# Mon Feb  1 18:48:12 CET 2016
+## EOI
+### Vocabulary about films
+* Predictable
+* Poignant
+* Moving
+* Touching
+* Chilling --> escalofriante
+* gripping --> fascinante/apasionante
+* creepy -> de terror/ de miedo
+* dull -> aburrido/soso
+* electrifying
+* brilliant
+* horrific -> horrible/espantoso
+* fast-paced
+* weak
+* unforgettable
+
