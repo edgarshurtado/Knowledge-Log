@@ -1045,10 +1045,10 @@ Center an image in the line:
 ## EOI
 ### Vocabulary about films
 * Predictable
-* Poignant
-* Moving
-* Touching
-* Chilling --> escalofriante
+* Poignant -> conmovedor
+* Moving -> emotivo
+* Touching -> emotivo
+* chilling --> escalofriante
 * gripping --> fascinante/apasionante
 * creepy -> de terror/ de miedo
 * dull -> aburrido/soso
@@ -1059,3 +1059,268 @@ Center an image in the line:
 * weak
 * unforgettable
 
+# Tue Feb  2 09:46:37 CET 2016
+## EOI
+### Vocabulary
+* I had my leg in plaster -> tener la pierna escayolada.
+
+## Design
+* [Color Scheme Designer](http://colorschemedesigner.com/csd-3.5/). Web para ayudar en la elección de colores a la hora de diseñar.
+
+# Thu Feb  4 10:11:57 CET 2016
+## EOI
+* When want to know the sex of an animal -> *Is it a he or a she?*
+* Sheik -> Jeque Árabe
+* Setting of -> Dónde está situado?
+* Box-office hit -> Éxito de taquilla
+
+## Angular Course
+### Angular Scaffolding
+* app
+    - styles        //Contiene los documentos CSS de la aplicación
+    - images        // Contiene las imágenes de la aplicación
+    - scripts
+        - controllers   //Contiene los controladores de AngularJS
+        - directives    //Contiene los directives de AngularJS
+        - filter        //Contiene los filters de AngularJS
+        - services      // Contiene los servicios de AngularJS
+        - app.js        // Definición y configuración de la aplicación
+        - values/constants      // Settings del proyecto. Esta carpeta es opcional
+    - vendor    //Contiene las librerías de terceros
+    - views     //Contiene las vistas HTML
+    - index.html        // Punto de entradda de la aplicación
+
+# Tue Feb  9 09:32:20 CET 2016
+## EOI
+### Vocabulary
+* V.A.T -> Value Added Tax (IVA)
+* Yacht -> Yate
+* Interestingly -> Curiosamente
+* freebies -> regalos
+* outlook -> actitud/opinión/pronóstico
+* money launderers -> blanqueadores de dinero
+* launderette -> lavandería
+* hecklers -> provocadores/ persona que interrumpe con preguntas
+* have a knack -> tener maña para algo
+
+##EIE
+### T6
+* Ventana única empresarial: Facilita las tramitaciones para la creacion de empresas, permitiendo entregar toda la documentación en un único sito y ya son los 
+* Las empresas han de tener de forma obligatoria la razón social, el nombre comercial es un nombre que pueden o no tener
+
+## PHP - AJAX
+### How to retrieve a php return as a xml file:
+
+Insert this before any echo:
+
+```php
+header('Content-Type: text/xml');
+```
+# Thu Feb 11 09:36:54 CET 2016
+## Col same size with bootstrap
+Add this class to you css
+```
+.row-eq-height {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display:         flex;
+
+}
+
+```
+[source](http://getbootstrap.com.vn/examples/equal-height-columns/)
+
+## Position element in the lower right
+```
+.box {
+    position:relative;
+
+}
+.bet_time {
+    position:absolute;
+    bottom:0;
+    right:0;
+
+}
+```
+> The way this works is that absolutely positioned elements are always positioned with respect to the first relatively positioned parent element, or the window. Because we set the box's position to relative, .bet_time positions its right edge to the right edge of .box and its bottom edge to the bottom edge of .box
+
+[source](http://stackoverflow.com/questions/3956043/css-how-to-position-element-in-lower-right)
+
+## Sticky footer
+How to kept the footer at the bottom
+[source](https://philipwalton.github.io/solved-by-flexbox/demos/sticky-footer/)
+
+
+# Mon Feb 15 09:45:28 CET 2016
+## J2EE - Hibernate. Pasos a seguir.
+1. Crear una web aplication nueva, elegir el directorio y tener marcada la opción de tener una carpeta dedicada para las librerías en el proyecto
+2. Elegimos servidor (En este caso Tomcat)
+3. Importamos librería Hibernate 4.3.1 y seleccionamos conexión.(Si la conexión no está creada le daremos a crear nueva conexión.) 
+    1. Elegir MySQL Driver
+    2. rellenar datos de la base de datos. (Podemos clickar en "Test Connection" para comprobar que la conexión se realiza correctamente);
+    3. Click Finish
+4. Una vez creado el proyecto nos aseguramos de contar con las librerías (Hibernate 4.3.x, Persistence JPA2.1 y MySQL JDBC Driver). Las que no tengamos las importamos.
+5. Creamos el paquete entity y dentro una class que representará la tabla de la BD que queramos persistir.
+6. La clase ha de implementar Serializable.
+7. Creamos todos los atributos que necesitemos junto a sus setter, getter y un constructor vacío. Cada atributo será una columna de la tabla a persistir, y además podemos crear un constructor con parámetros para facilitar la instanciación del objeto.
+### Mapeo con xml
+8. Click en el paquete entity y seleccionar new > Hibernate Mapping Wizard
+9. Seleccionamos la clase y la tabla de la base de datos.
+10. en el archivo generado xml debemos definir todos los atributos referenciando la columna de la BD a la que apuntan y la propiedad de la clase equivalente. Así nuestro ejemplo quedaría de la siguiente forma:
+
+Original
+```
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+  <class name="entity.CgStore" table="cg_store"/>
+</hibernate-mapping>
+```
+
+Configurado
+```
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="entity.CgStore" table="cg_store">
+        <id column="store_id" name="store_id" type="integer" />
+        <property column="store_address" name="store_address" />
+        <property column="store_name" name="store_name" />
+        <property column="store_phone" name="store_phone" /> 
+    </class>
+</hibernate-mapping>
+```
+### Mapeo con anotaciones
+8. Se modifica la clase de Java a persistir, añadiendo anotaciones JSP a las definiciones de las propiedades y a la propia clase, quedando así:
+```
+@Entity
+@Table(name="cg_store")
+public class CgStore implements Serializable{
+    @Id
+    @Column(name="store_id")
+    private int store_id;
+    @Column
+    private String store_name;
+    @Column
+    private String store_address;
+    @Column
+    private String store_phone;
+
+    public CgStore() {}
+
+    //...Getters and Setters
+
+}
+```
+El `Column` del id está puesto como ejemplo de cómo se debería escribir en caso de que el nombre de la propiedad no coincida con el nombre de la tabla
+
+9. Añadimos la clase al mapeo en hibernate.cfg.xml añadiendo la línea siguiente dentro de `session-factory`
+```
+<mapping class="entity.CgStore" />
+```
+
+
+### Siguientes pasos
+11. Creamos HibernateUtils en un paquete `utils`
+12. Creamos una clase donde definir todas las funciones que necesitemos para trabajar con la clase en un paquete `dao`. En esta primera prueba vamos a listar todas las tiendas, por lo que nuestra clase queda:
+```
+package dao;
+
+import entity.CgStore;
+import java.util.ArrayList;
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+import utils.HibernateUtil;
+
+public class CgStoreDAO {
+	private static final SessionFactory sf = HibernateUtil.getSessionFactory();
+	public static ArrayList<CgStore> listarTiendas(){
+		Session session = sf.openSession();
+
+		ArrayList<CgStore> listaTiendas = new ArrayList<>();
+		String hql = "SELECT t FROM CgStore t";
+
+		try {
+			listaTiendas = (ArrayList<CgStore>)session.createQuery(hql).list();
+			
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+
+		return listaTiendas;
+	}
+	
+}
+```
+13. Creamos un cotroller en el paquete `controllers` que se encargará de ser el que coja la información de la base de datos y mandarla a la vista. Ha de ser un Servlet. Ojo con añadirlo a el archivo `web.xml`
+
+```
+package controllers;
+
+import dao.CgStoreDAO;
+import entity.CgStore;
+import java.io.IOException;
+import java.util.ArrayList;
+import javax.servlet.ServletException;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+/**
+ *
+ * @author Rumil
+ */
+public class ListarTiendasController extends HttpServlet {
+
+    /**
+     * Processes requests for both HTTP <code>GET</code> and
+     * <code>POST</code> methods.
+     *
+     * @param request servlet request
+     * @param response servlet response
+     * @throws ServletException if a servlet-specific error occurs
+     * @throws IOException if an I/O error occurs
+     */
+    protected void processRequest(HttpServletRequest request, HttpServletResponse response)
+        throws ServletException, IOException {
+        response.setContentType("text/html;charset=UTF-8");
+
+        ArrayList<CgStore> listaTiendas = CgStoreDAO.listarTiendas();
+
+        request.setAttribute("listaTiendas", listaTiendas);
+        request.getRequestDispatcher("/listadoTiendas.jsp").forward(request, response);
+    
+        }
+
+    //...
+
+}
+```
+
+
+14. creamos la vista (jsp) a donde redirigimos la salida del controlador anterior
+15. Programamos una tabla para que imprima todos los datos.
+
+## Despliegue Aplicaciones Web
+### Ficheros relacionados con el mundo de las redes en LINUX
+* `/etc/hosts`
+    - Registros de direcciones IP
+* `/etc/ethers`
+    - MAC y nombre de la tarjeta de internet
+    - No es un fichero que esté comúnmente por defecto en el SO
+* `/etc/services`
+    - Estructura:
+        - Nombre servicio   puerto/protocolo    alias   Comentarios
+    - Listado de todos los servicios
+*  `/etc/protocolos`
+    - Estructura
+        - Nombre servicio   Numero Protocolo(no es número de puerto)
+* `/etc/hosts.equiv`
+    - Listado de máquinas confiables.
+* `/etc/inted.conf`
+    - No está en Mac
+    - Es el archivo de configuración del gestor de todos los servicios en red
+    - Servicio  Tipo de Socket(Puede ser stream(TCP) y dgram(UDP))  Tipo de protocolo(TCP/UDP/RPC)    Concurrencia  Usuario propietario del servicio
+    - Explicación en [este post](http://ibiblio.org/pub/Linux/docs/LuCaS/Manuales-LuCAS/doc-unixsec/unixsec-html/node196.html)
