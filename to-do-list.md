@@ -31,6 +31,7 @@
 * [Automate the boring stuff with Python](https://automatetheboringstuff.com/)
 * [Introducing Regular Expressions](http://shop.oreilly.com/product/0636920012337.do)
 * [Design for Hackers](http://www.amazon.es/Design-Hackers-Reverse-Engineering-Beauty/dp/1119998956)
+* [Focus](http://focusmanifesto.s3.amazonaws.com/FocusFree.pdf)
 
 ## Blog Posts
 
@@ -66,6 +67,7 @@
 * [Bioinformatics specialization](https://www.coursera.org/specialization/bioinformatics/34)
 * [Intro to algorithms](https://www.udacity.com/course/intro-to-algorithms--cs215)
 * [The Command Line Crash Course](http://cli.learncodethehardway.org/book/)
+* [Full-Stack Python](http://www.fullstackpython.com/)
 
 ## Videos
 
