@@ -1324,3 +1324,45 @@ public class ListarTiendasController extends HttpServlet {
     - Es el archivo de configuración del gestor de todos los servicios en red
     - Servicio  Tipo de Socket(Puede ser stream(TCP) y dgram(UDP))  Tipo de protocolo(TCP/UDP/RPC)    Concurrencia  Usuario propietario del servicio
     - Explicación en [este post](http://ibiblio.org/pub/Linux/docs/LuCaS/Manuales-LuCAS/doc-unixsec/unixsec-html/node196.html)
+
+
+#Tue Feb 16 10:00:31 CET 2016
+##EOI
+* sue -> demandar == filled a lawsuit.
+* trailed behind-> sigue
+* everything is a click away -> todo está a un click de distancia.
+* adverts == advertisements == commercials
+### Verbs:
+* Sound /id/:
+    - verbs ending in d or t: end > ended; start > started
+
+#Wed Feb 17 17:07:28 CET 2016
+##EIE
+* Ventanilla Única Empresarial(VUE)
+    - Facilita la creación de una empresa
+        - Empresario Individual
+        - 
+* Punto de Atención al Emprendedor (PAE)
+    - La VUE se a integrado aquí.
+    - Absorbe a la PAIT
+    - Incluye la información y formularios necesarios.
+    - Prenstar documentación
+    - Estado solicitud
+
+* Punto de Asesoramiento e Inicio de Tramitación (PAIT)
+    - Constituida en 2006
+    - En 2013 pasa a llamarse PAE
+    
+* Centro de Información y Red de Creación de Empresas(CIRCE)
+    - Sistema informático para realizar los trámites para la creación de  un empresa de forma telemática
+
+* Documento Único Electrónico
+    - Es el documento que se utiliza en el sistema electrónico CIRCE
+
+## Despliegue aplicaciones Web
+### NETSTAT
+* Scaneador de puertos en el ordenador que lo ejecuta
+    - Scaneo: `> netstat -r`
+* Está a nivel de socket
+### NMAP
+* Scaneador de puertos en el ordenador que lo ejecuta, ordenadores de la red local e incluso de un dns externo a la red local.
