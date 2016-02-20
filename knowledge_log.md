@@ -1366,3 +1366,21 @@ public class ListarTiendasController extends HttpServlet {
 * Está a nivel de socket
 ### NMAP
 * Scaneador de puertos en el ordenador que lo ejecuta, ordenadores de la red local e incluso de un dns externo a la red local.
+
+#Thu Feb 18 09:39:39 CET 2016
+## EOI
+* whimsical -> caprichoso
+
+### Conditional
+#### Zero Conditional
+ If you heat(S.Pres) water to 100ºC, it boils(S.pres)
+#### First Conditional
+If the weather is(S.Pres) good, we'll go(Fut) for a walk
+#### Second Conditional
+If I knew(S. Past) the answer, I woutld tell (should, could...) you
+* Variation-> If i **were to** offer you the job, would you accept it?
+
+#### Third Conditional
+If I had studied(Past Pf) more, I would have passed (would+have+Past Participle) the exam.
+
+If I **had seen** her, I would have told her.
