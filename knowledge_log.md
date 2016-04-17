@@ -144,17 +144,6 @@ $this->load->library('encrytp');
     * surveillance -> vigilancia
     * hand over -> entregar
 
-* Center an object exactly in the middle of the screen: [explanation
-  post](https://css-tricks.com/quick-css-trick-how-to-center-an-object-exactly-in-the-center/)
-
-```css
-.center {
-     position: fixed; 
-     left: 50%;
-     top: 50%;
-     transform: translate(-50%, -50%);
- }
- ```
 
 #### Pragmatic Programmer:
   * Relentless -> Implacable
@@ -591,14 +580,14 @@ For more information and other solutions you can read this
 ```javascript
     var style = window.getComputedStyle(element, pseudoElt);
 ```
-
 * [Docs](https://developer.mozilla.org/es/docs/Web/API/Window/getComputedStylehll)
 
-#23/11/2015
-## See files in track in git
+other solution (more reliable):
+
+```javascript
+var style = window.getBoundingClientRect();
 ```
-    git ls-files
-```
+
 
 ## Despliegue de aplicaciones web
 ### Pasar un dominio de una empresa registradora a otra
@@ -745,41 +734,6 @@ in the code just turn off the assertions you need, but don't every of them.
 ## Pragmatic Programmer
 * Deallocate resources in the opposite order to that in which you allocate them. That way you won't orphan resources if one resource contains references to another.”
 
-##Align form elements
-```
-    <form class="user-form">
-        <div class="field">
-            <label for="firstname">First Name:</label>
-            <input name="firstname" type="text" size="50" autofocus />
-        </div>
-        <div class="field">
-            <label for="lastname">Last Name:</label>
-            <input type="text" name="lastname" size="50" />
-        </div>
-        <div class="field">
-            <label for="birthdate">Birth Date:</label>
-            <input type="date" name="bdate" size="50" />
-        </div>
-    <form>
-```
-
-```
-    .user-form { padding:20px;  }
-
-    .user-form .field { padding: 4px; margin:1px; background: #eee;  }
-
-    .user-form .field label { display:inline-block; width:120px; margin-left:5px;  }
-
-    .user-form .field input { display:inline-block;  }
-```
-
-[Aligning HTML5 form elements](http://stackoverflow.com/questions/17825979/aligning-html5-form-elements)
-
-## Div element size doesn't increase if it has floated elements
-[StackOverflow ask](http://stackoverflow.com/questions/16568272/why-doesnt-the-height-of-a-container-element-increase-if-it-contains-floated-el)
-
-The solution is adding a `clear: both;` div after the div with floated elements
-
 # 2015-12-17
 
 ## EOI
@@ -801,8 +755,6 @@ rusty --> oxidado
 * 11-05-2016 -> Genomics
 * 23-05-2016 -> Developing statistical intuition
 
-## Box Shadow css trick
-[article](https://css-tricks.com/snippets/css/css-box-shadow/)
 
 # 2015-12-18
 ## Pragmatic Programmer
@@ -944,8 +896,8 @@ La SA ha de tener un grupo designado para la revisión de las cuentas de la
 empresa.
 
 ## Despliegue de Aplicaciones
-### Protocolos de interconexión
-* *OSI* Modelo oberto y estándard de interconexión
+### Arquitecturas de conexión
+* *OSI* Modelo abierto y estándard de interconexión
 * *SNA* Utilizada por algunos organismos debido a motivos de seguridad (entre
 los motivos es porque es poco conocida).
 * *TCP/IP*
@@ -1029,18 +981,6 @@ al apache el html, esto es lo que se envía al cliente que haya hecho la petici�
 * gutted -> disappointed
 
 
-# Fri Jan 29 20:41:09 CET 2016
-## CSS
-Center an image in the line:
-```css
- IMG.displayed {
-    display: block;
-    margin-left: auto;
-    margin-right: auto } 
-```
-
-[source](https://www.w3.org/Style/Examples/007/center.en.html)
-
 # Mon Feb  1 18:48:12 CET 2016
 ## EOI
 ### Vocabulary about films
@@ -1116,43 +1056,6 @@ Insert this before any echo:
 ```php
 header('Content-Type: text/xml');
 ```
-# Thu Feb 11 09:36:54 CET 2016
-## Col same size with bootstrap
-Add this class to you css
-```
-.row-eq-height {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display:         flex;
-
-}
-
-```
-[source](http://getbootstrap.com.vn/examples/equal-height-columns/)
-
-## Position element in the lower right
-```
-.box {
-    position:relative;
-
-}
-.bet_time {
-    position:absolute;
-    bottom:0;
-    right:0;
-
-}
-```
-> The way this works is that absolutely positioned elements are always positioned with respect to the first relatively positioned parent element, or the window. Because we set the box's position to relative, .bet_time positions its right edge to the right edge of .box and its bottom edge to the bottom edge of .box
-
-[source](http://stackoverflow.com/questions/3956043/css-how-to-position-element-in-lower-right)
-
-## Sticky footer
-How to kept the footer at the bottom
-[source](https://philipwalton.github.io/solved-by-flexbox/demos/sticky-footer/)
-
-
 # Mon Feb 15 09:45:28 CET 2016
 ## J2EE - Hibernate. Pasos a seguir.
 1. Crear una web aplication nueva, elegir el directorio y tener marcada la opción de tener una carpeta dedicada para las librerías en el proyecto
@@ -1379,8 +1282,72 @@ If the weather is(S.Pres) good, we'll go(Fut) for a walk
 #### Second Conditional
 If I knew(S. Past) the answer, I woutld tell (should, could...) you
 * Variation-> If i **were to** offer you the job, would you accept it?
+                    =offered
 
 #### Third Conditional
 If I had studied(Past Pf) more, I would have passed (would+have+Past Participle) the exam.
 
 If I **had seen** her, I would have told her.
+
+
+# Mon Feb 22 17:17:12 CET 2016
+## Despliegue aplicaciones
+### nmap
+6. `nmap 192.168.4.40 -p20-30`
+7. `nmap -sV insecure.org`
+8. `nmpa -sv localhost` y miramos el puerto 80
+9. `nmap -O www.elpais.es`
+
+
+#Wed Feb 24 19:09:36 CET 2016
+##Despliegue aplicaciones
+###Archivos de Apache
+
+* ServerRoot
+* pidfile
+
+* /etc/init.d es el daemon supervisor del sistema operativo
+* Apache gasta 80 y 483, el 443 es el puerto para información 
+
+* Todos los hosts virtuales van por el 80 también.
+    - En tu site puedes tener varios dns
+
+
+# Mon Mar 28 13:53:50 CEST 2016
+## R statics
+
+### Create an empty data.frame
+```
+nodata <- data.frame(x= numeric(0), y= integer(0), z = character(0))
+str(nodata)
+
+## 'data.frame':    0 obs. of  3 variables:
+##  $ x: num 
+##  $ y: int 
+##  $ z: Factor w/ 0 levels: 
+```
+
+### List of files in current wd
+```
+list.files()
+```
+
+### Add rows to a data.frame
+Create a new data frame and use rbind
+
+## Node
+* [upgrade node](http://theholmesoffice.com/node-js-fundamentals-how-to-upgrade-the-node-js-version/)
+
+
+# Thu Apr 14 23:14:42 CEST 2016
+
+## JS
+* `domElement.getBoundaryClientRect()` this method asures you the real css properties of the dom element
+* `document.querySelector('cssSelector')` Way of selecting dom elements natively. No jQuery needed
+
+
+# Sun Apr 17 19:07:23 CEST 2016
+# SVG
+They are a kind of file writen in xml that can be copy-pasted from an editor 
+such as inkscape to the html document. This allows to have some shapes that would
+be very complicated to achive (or even imposible) with css
