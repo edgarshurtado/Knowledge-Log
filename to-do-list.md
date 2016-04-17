@@ -68,6 +68,8 @@
 * [Intro to algorithms](https://www.udacity.com/course/intro-to-algorithms--cs215)
 * [The Command Line Crash Course](http://cli.learncodethehardway.org/book/)
 * [Full-Stack Python](http://www.fullstackpython.com/)
+* [Software Debugging](https://www.udacity.com/course/software-debugging--cs259)
+* [How to contribute to an open source project on GitHub](https://egghead.io/series/how-to-contribute-to-an-open-source-project-on-github)
 
 ## Videos
 
