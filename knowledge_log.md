@@ -1347,7 +1347,13 @@ Create a new data frame and use rbind
 
 
 # Sun Apr 17 19:07:23 CEST 2016
-# SVG
+## SVG
 They are a kind of file writen in xml that can be copy-pasted from an editor 
 such as inkscape to the html document. This allows to have some shapes that would
 be very complicated to achive (or even imposible) with css
+
+## SAÓ 15/06/2016
+* Actividades: Continuación del web component stv-launcher.
+* Orientaciones: Sobre cómo calcular con js la posición que ha de llevar el 
+elemento. Ayuda para el perfecto alineamiento de los elementos de un div utilizando
+flex
