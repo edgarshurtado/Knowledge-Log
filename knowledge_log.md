@@ -692,6 +692,7 @@ new RegExp("\\s", "g")
 ```
 
 I have to use \\s instead of \s when using this constructor
+This is because I have to scape the scape character '\'
 
 #30/12/2015
 ## Grocery_CRUD issue with set_relation
@@ -1357,3 +1358,7 @@ be very complicated to achive (or even imposible) with css
 * Orientaciones: Sobre cómo calcular con js la posición que ha de llevar el 
 elemento. Ayuda para el perfecto alineamiento de los elementos de un div utilizando
 flex
+
+#Thu Apr 28 11:35:11 CEST 2016
+## CSS
+[How to make the smooth scroll on iOS devices](https://css-tricks.com/snippets/css/momentum-scrolling-on-ios-overflow-elements/)
