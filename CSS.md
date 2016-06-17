@@ -102,3 +102,8 @@ How to kept the footer at the bottom
 
 The solution is adding a `clear: both;` div after the div with floated elements
 
+## Importance rules
+
+The CSS importance is at follows
+
+> attributes < stylesheet < inline css
