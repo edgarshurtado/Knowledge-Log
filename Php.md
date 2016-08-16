@@ -10,3 +10,5 @@ while($letter !== "AAA") {
     $letters[] = $letter++;
 }
 ```
+
+[source](http://stackoverflow.com/a/14278795);

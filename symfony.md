@@ -1,3 +1,4 @@
+## Comands
 
 ## Controllers
 ### Obtain parameters passed with the http request
@@ -31,6 +32,12 @@ php app/console generate:bundle
 php app/console doctrine:generate:entities ExampleBundle
 ```
 
+* See the sqls that would be applied for a schema update
+
+```bash
+php app/console doctrine:schema:update --dump-sql
+```
+
 * Update the database with the doctrine entities schema
 
 ```bash
@@ -49,7 +56,6 @@ follow the rule of `ExampleBundle:EntityName`
 ### Relationships between entities
 
 #### Many to one relationships
-
 * On the many side:
 
 ```php
