@@ -1,0 +1,101 @@
+
+## Controllers
+### Obtain parameters passed with the http request
+
+```php
+use Symfony\Component\HttpFoundation\Request;
+
+public function updateAction(Request $request)
+{
+    // $_GET parameters
+    $request->query->get('name');
+
+    // $_POST parameters
+    $request->request->get('name');
+}
+```
+
+## Bundles
+### Create a new bundle
+
+```bash
+php app/console generate:bundle
+```
+
+## Doctrine
+### Console
+
+* Generate getters and setters of the entities of a bundle
+
+```bash
+php app/console doctrine:generate:entities ExampleBundle
+```
+
+* Update the database with the doctrine entities schema
+
+```bash
+php app/console doctrine:schema:update --force
+```
+
+* Create a new Entity
+
+```bash
+php app/console doctrine:generate:entity
+```
+
+> We'll be prompted for some data as the name. The name of the entity has to
+follow the rule of `ExampleBundle:EntityName`
+
+### Relationships between entities
+
+#### Many to one relationships
+
+* On the many side:
+
+```php
+/**
+ * @ORM\ManyToOne(targetEntity="Encuesta", inversedBy="encuestaRespuestas")
+ */
+private $encuesta;
+```
+
+* On the one side:
+
+```php
+/**
+ * @ORM\OneToMany(targetEntity="EncuestaRespuesta", mappedBy="encuesta")
+ */
+private $encuestaRespuestas;
+```
+
+> If the relationship is with an Entity from other bundle, we
+use the namespace of the entity. (e.g: `AdminBundle\Entity\Cliente`)
+
+### Errors got previously
+
+#### `Attribute "length" of ... expects a(n) integer, but got string.`
+
+This is due when in the annotation for the attribute length we put the number
+between quotes.
+
+This is wrong:
+
+```php
+/**
+ * @ORM\Column(name="ser4", type="string", length="255")
+ */
+private $ser4;
+```
+
+Whereas this is right
+
+```php
+/**
+ * @ORM\Column(name="ser4", type="string", length=255)
+ */
+private $ser4;
+```
+
+> Notice the diference in the value passed to length
+
+> [reference](http://stackoverflow.com/a/33241263)
