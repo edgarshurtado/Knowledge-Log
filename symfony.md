@@ -53,6 +53,16 @@ php app/console doctrine:generate:entity
 > We'll be prompted for some data as the name. The name of the entity has to
 follow the rule of `ExampleBundle:EntityName`
 
+
+### Default value for fields in doctrine
+Example:
+
+```php
+/**
+ * @ORM\Column(name="campoId", type="string", length=255, options={"default":"id"})
+ */
+```
+
 ### Relationships between entities
 
 #### Many to one relationships
@@ -105,3 +115,77 @@ private $ser4;
 > Notice the diference in the value passed to length
 
 > [reference](http://stackoverflow.com/a/33241263)
+
+## Symfony commands
+
+### Built in commands
+`php app\console router:debug`
+
+### Create your own
+For creating a symfony command, create a file in the Command folder of the Bundle
+
+it has to have the followin namespace and imports:
+
+```php
+namespace Madison\RutinasBundle\Command;
+
+use Symfony\Bundle\FrameworkBundle\Command\ContainerAwareCommand;
+use Symfony\Component\Console\Style\SymfonyStyle;
+use Symfony\Component\Console\Output\OutputInterface;
+use Symfony\Component\Console\Input\InputInterface;
+```
+
+Create a `configure` function where the name we'll be set and a `execute`
+function that will contain the main business logic:
+
+```php
+protected function configure()
+{
+    $this->setName('namspace:nombre');
+}
+
+protected function execute(InputInterface $input, OutputInterface $output)
+{
+    // Bussiness logic
+}
+```
+
+The injection of `InputInterface` and `OutputInterface` is compulsary
+
+## Assetic
+
+### Installation
+
+1. Install the AsseticBundle
+2. Register it to *AppKernel*
+3. Configure assetic in *app/config/config.yml*
+
+For detailed info see [the symfony docs](http://symfony.com/doc/current/assetic/asset_management.html)
+
+### Using Assetic
+
+```twig
+{# Javascript Imports from the bundle #}
+{% javascripts '@AppBundle/Resources/public/js/*' %}
+    <script src="{{ asset_url }}"></script>
+{% endjavascripts %}
+
+{#
+    CSS imports from the bundle. Notice that the filters have to be configured
+    before
+#}
+{% stylesheets 'bundles/app/css/*' filter='cssrewrite' %}
+    <link rel="stylesheet" href="{{ asset_url }}" />
+{% endstylesheets %}
+```
+
+### Errors encounters
+I got the following error after configuring assetic to work from twig:
+
+> Unable to generate a URL for the named route ...
+
+To solve it I just cleared the cache
+
+```bash
+php app\console cache:clear
+```
