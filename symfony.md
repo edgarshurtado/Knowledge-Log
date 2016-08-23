@@ -119,7 +119,10 @@ private $ser4;
 ## Symfony commands
 
 ### Built in commands
-`php app\console router:debug`
+
+* `php app\console router:debug`
+
+* `php app\console cache:clear`
 
 ### Create your own
 For creating a symfony command, create a file in the Command folder of the Bundle
@@ -186,6 +189,4 @@ I got the following error after configuring assetic to work from twig:
 
 To solve it I just cleared the cache
 
-```bash
-php app\console cache:clear
-```
+`php app\console cache:clear`
