@@ -22,7 +22,7 @@ thoughts. Created by Robert R. Morris
 ```
 RewriteEngine on RewriteCond $1 !^(index\.php|resources|robots\.txt)
 RewriteCond %{REQUEST_FILENAME} !-f RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule ^(.*)$ index.php/$1 [L,QSA] 
+RewriteRule ^(.*)$ index.php/$1 [L,QSA]
 ```
 
     * backoffice : Sistema para el mantenimiento de la página web al estilo de
@@ -81,8 +81,8 @@ thing until you finished the previous one)
 
 ```javascript
 
- (function foo(){ 
- // some code… 
+ (function foo(){
+ // some code…
  });
 
 ```
@@ -91,7 +91,7 @@ thing until you finished the previous one)
     * .htaccess nos permite la utilización de urls amigables.
 * There's something called Coffe Script
     * the CodeNewbie fellow piecedigital it's not fond of it because it's
-      whitspaces sensitive. 
+      whitspaces sensitive.
 
 ### 30/10/2015
 * Reading How to Write a Git Commit Message
@@ -122,7 +122,7 @@ $this->load->library('encrytp');
         * en el archivo config.php
 
 ```php
- $config['encryption_key'] = ''; //poner una clave de encriptación 
+ $config['encryption_key'] = ''; //poner una clave de encriptación
 ```
 
 * FreeCodeCamp Gitter Chat
@@ -230,7 +230,7 @@ colleges would ask you
 * Clase cliente (Forms)
     * Existe el array `form` en JS nada más cargar la página, pero esta forma de
       programar no está recomendada porque hay que acceder a los distintos
-formularios mediante index. La manera correcta sería mediante ID 
+formularios mediante index. La manera correcta sería mediante ID
     * Al final de la sección 7.1 hay un grupo de funciones útiles para
       validación de formularios.
 
@@ -241,30 +241,30 @@ formularios mediante index. La manera correcta sería mediante ID
 
 Pushbullet chrome plugin causes a [pasteboard issue](https://discussions.apple.com/message/27250427#27250427)
 
-Delete all files without extension from bash 
+Delete all files without extension from bash
 
 ```bash
 bash $ find . -type f  ! -name
-"*.*"  -delete 
+"*.*"  -delete
 ```
 
-Compile and execute C from terminal 
+Compile and execute C from terminal
 
 ```
 
 bash $ gcc -o compiled_file_name
-source_file.c $ ./compiled_file_name 
+source_file.c $ ./compiled_file_name
 ```
 
 Resize a tmux split to full window `ctr-B + z`
 
-Close files in vim without quiting vim `:bd` 
+Close files in vim without quiting vim `:bd`
 
-Know if the web browser es Internet Explorer 
+Know if the web browser es Internet Explorer
 
 ```javascript
 
-var ie = navigator.userAgent.toLowerCase().indexOf('msie')!=-1; 
+var ie = navigator.userAgent.toLowerCase().indexOf('msie')!=-1;
 
 ```
 
@@ -293,7 +293,7 @@ dns
 La comunicación con el servidor dns se hace mediante ip
 
 El router ante un conflicto entre el servidor objetivo configurado en el router
-y la configuración del ordenador, manda el router en última instancia 
+y la configuración del ordenador, manda el router en última instancia
 
 el archivo `host` es un archivo local que sirve de "servidor dns"
 
@@ -400,9 +400,9 @@ completely disposable. But the tracer bullets keeps at the codebase.
 > the skeleton of the final system. Think of prototyping as the reconnaissance
 > and intelligence gathering that takes place before a single tracer bullet is
 > fired.”
-> 
+>
 > Fragmento de: Hunt, Andrew;Thomas, David. “The Pragmatic Programmer: From
-> Journeyman to Master”. iBooks. 
+> Journeyman to Master”. iBooks.
 
 ### 10/11/2015
 
@@ -493,7 +493,7 @@ completely disposable. But the tracer bullets keeps at the codebase.
         - header
         - nav
         - footer
-    * Página para saber las características que soporta cada navegador 
+    * Página para saber las características que soporta cada navegador
     [Can I Use](http://caniuse.com/)
     * HTML5 tiene soporte nativo para calendario y color-pick
     * placeholder es de HTML5
@@ -557,7 +557,7 @@ line:
 set -g default-terminal "screen-256color"
 ```
 
-For more information and other solutions you can read this 
+For more information and other solutions you can read this
 [github issue](https://github.com/altercation/solarized/issues/159)
 
 ## Set mailx to send emails with gmail account
@@ -600,7 +600,7 @@ Ventajas:
 * Necesidad de instalar únicamente una vez el servidor
 * Flexibilidad
 
-La parte de Java que se baja y ejecuta en la parte cliente es conocida como 
+La parte de Java que se baja y ejecuta en la parte cliente es conocida como
 applet. Es **bytecode** descargado desde el servidor.
 
 Al crear el socket servidor diremos el puerto por el que trabajaremos y cuando
@@ -670,7 +670,7 @@ Full-boarding -> pensión completa
 
 ###p36 ex 4a
 
-2. Are you going to do// Yes we're going to 
+2. Are you going to do// Yes we're going to
 3. The plane lands// we get
 4. It's likely to rain//It'll be//I'll check
 5. We might go // we could stop off
@@ -765,7 +765,7 @@ application and gives a cleaner code.
 
 # 2016-1-09
 ## Pragmatic Programmer
-`cron` it's a unix command to schedule processes 
+`cron` it's a unix command to schedule processes
 [wikipedia](https://en.wikipedia.org/wiki/Cron)
 
 # 2016-1-11
@@ -806,8 +806,8 @@ ciento volando
 * jsp -> **Java Server Page** página web generada dinámicamente que combina
 html con java
 * scriplet -> código java presente en un documento jsp
-* directives jsp -> JSP directives provide directions and instructions to the 
-container, telling it how to handle certain aspects of JSP processing. A JSP 
+* directives jsp -> JSP directives provide directions and instructions to the
+container, telling it how to handle certain aspects of JSP processing. A JSP
 directive affects the overall structure of the servlet class
 
 ## VIM
@@ -829,14 +829,14 @@ hacen lo que quieren
 de tiempo
 * Out of sight out of mind -> Ojos que no ven, corazón que no siente.
 * A stich in time saves nine -> Más vale prevenir que curar.
-* There's no smoke without fire -> Cuando el río suena, agua lleva 
+* There's no smoke without fire -> Cuando el río suena, agua lleva
 * People who live in glass houses shouldn't throw stones -> Don't say bad things
 about others because it could come back
 * It's no use crying over split milk -> A lo hecho pecho
 * In for a penny in for a pound -> De perdidos al río
 
 ## Servidor: Servlets
-* CGI: solicitar datos de un programa ejecutado en un servidor web. CGI 
+* CGI: solicitar datos de un programa ejecutado en un servidor web. CGI
 especifica un estándar para transferir datos entre el cliente y el programa
 
 
@@ -861,8 +861,8 @@ puerta de enlace (el router).
 La información en internet viaja en forma de paquetes (troceada). De esta forma,
 cada paquete puede buscar rutas diferentes para llegar al destino. Así no hay
 líneas dedicadas. Si en algún momento un nodo callera, el protocolo ip es capaz
-de redirigir los paquetes (siempre en la ruta que menos congestione la red). 
-Además, una vez en el destino, el protocolo IP se encarga de reordenar los 
+de redirigir los paquetes (siempre en la ruta que menos congestione la red).
+Además, una vez en el destino, el protocolo IP se encarga de reordenar los
 paquetes para que formar el archivo que ha sido enviado.
 
 
@@ -874,7 +874,7 @@ es la forma de identificar un proceso en una IP determinada.
 Aunque parezca que las capas hablan entre ellas de forma horizontal, no es
 cierto, sino que es vertical.
 
-En una conexión tipo TCP, cada paquete recibido genera un mensaje respuesta 
+En una conexión tipo TCP, cada paquete recibido genera un mensaje respuesta
 desde el cliente (ACK).
 
 Cuando se manda información, a medida que bajamos en la arquitectura TCP/IP se
@@ -952,16 +952,16 @@ propiamente dichos empiezan en la capa de enlace.
     - I wish I had taken the elevator.
     - I wish I had thrown something heavier at him.
     - If only my partner wouldn't be such a coward.
-* 
+*
     - If only I had enjoyed life more.
     - I should've been more sociable when I was young.
     - I should've bought an extra battery.
 
 ### Other
 * multi-word phrases -> phrasal verbs
-    
+
 ## Cliente
-* Cuando hacemos un método *get* la información se manda por la **URL**, cuando el 
+* Cuando hacemos un método *get* la información se manda por la **URL**, cuando el
 método es POST la información se manda por la **cabecera HTML**
 
 # Mon Jan 25 16:39:24 CET 2016
@@ -1046,7 +1046,7 @@ al apache el html, esto es lo que se envía al cliente que haya hecho la petici�
 
 ##EIE
 ### T6
-* Ventana única empresarial: Facilita las tramitaciones para la creacion de empresas, permitiendo entregar toda la documentación en un único sito y ya son los 
+* Ventana única empresarial: Facilita las tramitaciones para la creacion de empresas, permitiendo entregar toda la documentación en un único sito y ya son los
 * Las empresas han de tener de forma obligatoria la razón social, el nombre comercial es un nombre que pueden o no tener
 
 ## PHP - AJAX
@@ -1061,7 +1061,7 @@ header('Content-Type: text/xml');
 ## J2EE - Hibernate. Pasos a seguir.
 1. Crear una web aplication nueva, elegir el directorio y tener marcada la opción de tener una carpeta dedicada para las librerías en el proyecto
 2. Elegimos servidor (En este caso Tomcat)
-3. Importamos librería Hibernate 4.3.1 y seleccionamos conexión.(Si la conexión no está creada le daremos a crear nueva conexión.) 
+3. Importamos librería Hibernate 4.3.1 y seleccionamos conexión.(Si la conexión no está creada le daremos a crear nueva conexión.)
     1. Elegir MySQL Driver
     2. rellenar datos de la base de datos. (Podemos clickar en "Test Connection" para comprobar que la conexión se realiza correctamente);
     3. Click Finish
@@ -1092,7 +1092,7 @@ Configurado
         <id column="store_id" name="store_id" type="integer" />
         <property column="store_address" name="store_address" />
         <property column="store_name" name="store_name" />
-        <property column="store_phone" name="store_phone" /> 
+        <property column="store_phone" name="store_phone" />
     </class>
 </hibernate-mapping>
 ```
@@ -1148,14 +1148,14 @@ public class CgStoreDAO {
 
 		try {
 			listaTiendas = (ArrayList<CgStore>)session.createQuery(hql).list();
-			
+
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
 
 		return listaTiendas;
 	}
-	
+
 }
 ```
 13. Creamos un cotroller en el paquete `controllers` que se encargará de ser el que coja la información de la base de datos y mandarla a la vista. Ha de ser un Servlet. Ojo con añadirlo a el archivo `web.xml`
@@ -1195,7 +1195,7 @@ public class ListarTiendasController extends HttpServlet {
 
         request.setAttribute("listaTiendas", listaTiendas);
         request.getRequestDispatcher("/listadoTiendas.jsp").forward(request, response);
-    
+
         }
 
     //...
@@ -1245,7 +1245,7 @@ public class ListarTiendasController extends HttpServlet {
 * Ventanilla Única Empresarial(VUE)
     - Facilita la creación de una empresa
         - Empresario Individual
-        - 
+        -
 * Punto de Atención al Emprendedor (PAE)
     - La VUE se a integrado aquí.
     - Absorbe a la PAIT
@@ -1256,7 +1256,7 @@ public class ListarTiendasController extends HttpServlet {
 * Punto de Asesoramiento e Inicio de Tramitación (PAIT)
     - Constituida en 2006
     - En 2013 pasa a llamarse PAE
-    
+
 * Centro de Información y Red de Creación de Empresas(CIRCE)
     - Sistema informático para realizar los trámites para la creación de  un empresa de forma telemática
 
@@ -1308,7 +1308,7 @@ If I **had seen** her, I would have told her.
 * pidfile
 
 * /etc/init.d es el daemon supervisor del sistema operativo
-* Apache gasta 80 y 483, el 443 es el puerto para información 
+* Apache gasta 80 y 483, el 443 es el puerto para información
 
 * Todos los hosts virtuales van por el 80 también.
     - En tu site puedes tener varios dns
@@ -1323,9 +1323,9 @@ nodata <- data.frame(x= numeric(0), y= integer(0), z = character(0))
 str(nodata)
 
 ## 'data.frame':    0 obs. of  3 variables:
-##  $ x: num 
-##  $ y: int 
-##  $ z: Factor w/ 0 levels: 
+##  $ x: num
+##  $ y: int
+##  $ z: Factor w/ 0 levels:
 ```
 
 ### List of files in current wd
@@ -1349,16 +1349,30 @@ Create a new data frame and use rbind
 
 # Sun Apr 17 19:07:23 CEST 2016
 ## SVG
-They are a kind of file writen in xml that can be copy-pasted from an editor 
+They are a kind of file writen in xml that can be copy-pasted from an editor
 such as inkscape to the html document. This allows to have some shapes that would
 be very complicated to achive (or even imposible) with css
 
 ## SAÓ 15/06/2016
 * Actividades: Continuación del web component stv-launcher.
-* Orientaciones: Sobre cómo calcular con js la posición que ha de llevar el 
+* Orientaciones: Sobre cómo calcular con js la posición que ha de llevar el
 elemento. Ayuda para el perfecto alineamiento de los elementos de un div utilizando
 flex
 
 #Thu Apr 28 11:35:11 CEST 2016
 ## CSS
 [How to make the smooth scroll on iOS devices](https://css-tricks.com/snippets/css/momentum-scrolling-on-ios-overflow-elements/)
+
+#jQuery pluggins
+
+## DataTables
+Bootstrap-Jquery tables of data with pagination, and search options
+[resource](https://datatables.net/examples/styling/bootstrap.html)
+
+## Bootstrap DateTimePicker
+### Error: g.size is not defined
+It's probably because of the jQuery version. Bootstrap dateTimePicker needs
+jQuery 2.1.4 at most
+
+[stackoverflow answer](http://stackoverflow.com/a/39077456)
+Probably because of the jQuery v

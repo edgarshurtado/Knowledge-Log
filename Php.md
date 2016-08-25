@@ -11,4 +11,4 @@ while($letter !== "AAA") {
 }
 ```
 
-[source](http://stackoverflow.com/a/14278795);
+[source](http://stackoverflow.com/a/14278795)
