@@ -190,3 +190,31 @@ I got the following error after configuring assetic to work from twig:
 To solve it I just cleared the cache
 
 `php app\console cache:clear`
+
+----
+
+Broken references when using assetic for css that it's inside a bundle
+
+We have to reference directly to the installed assets. So whenever we have some
+assets we should do the following
+
+1. `php app\console assets:install -symlink web`
+2. The references when loading the css have to be directly having in mind that
+our assets are in **web/bundles/my-bundle/**
+
+```twig
+{% stylesheets 'bundles/front/css/bootstrap-datetimepicker.min.css'
+                'bundles/front/css/dataTables.bootstrap.min.css'
+                'bundles/front/css/multiselectcss.css'
+                'bundles/front/css/jquery-ui-1.10.3.custom.css'
+                'bundles/front/css/jquerymultiselectcss.css'
+                filter="cssrewrite"
+%}
+    <link rel="stylesheet" type="text/css" href="{{ asset_url }}">
+{% endstylesheets %}
+```
+
+> Normally we reference an asset in a bundle by `@MyBundle/MyAsset`, however this
+will break all internal links in css files to other assets such as images
+
+[reference](http://www.craftitonline.com/2011/06/symfony2-beautify-with-assetic-and-a-template-part-ii/)
