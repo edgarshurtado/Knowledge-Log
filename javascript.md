@@ -8,3 +8,5 @@ if(typeof obj.prop == 'undefined'){
 
 > This way it returns true either if the property doesn't exist or is set
 to 'undefined'
+
+[resource](http://stackoverflow.com/a/2281671)
