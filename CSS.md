@@ -1,7 +1,7 @@
 # Tricks
 ## Fix <a> tag being bigger than its content
-I realized while trying to create a menu using SVG elements inside an `a` tag 
-that this had a bit more of height that the svg. It turned out that to fix it 
+I realized while trying to create a menu using SVG elements inside an `a` tag
+that this had a bit more of height that the svg. It turned out that to fix it
 I had to set the content of `<a>` to `display: flex`.
 
 ##  Center an image in the line:
@@ -9,7 +9,7 @@ I had to set the content of `<a>` to `display: flex`.
  IMG.displayed {
     display: block;
     margin-left: auto;
-    margin-right: auto } 
+    margin-right: auto }
 ```
 
 [source](https://www.w3.org/Style/Examples/007/center.en.html)
@@ -21,7 +21,7 @@ you want it to do so, you can add to it the tabindex attribute (with a tabindex 
 ## Center an object exactly in the middle of the screen:
 ```css
 .center {
-     position: fixed; 
+     position: fixed;
      left: 50%;
      top: 50%;
      transform: translate(-50%, -50%);
@@ -107,3 +107,14 @@ The solution is adding a `clear: both;` div after the div with floated elements
 The CSS importance is at follows
 
 > attributes < stylesheet < inline css
+
+## Select All elements but it's last child
+
+```css
+p:not(:last-child){
+  <!-- Some rules here -->
+}
+```
+
+This code will select all the `p` tags but the ones that are the last child of
+its parent.
