@@ -182,7 +182,7 @@ For detailed info see [the symfony docs](http://symfony.com/doc/current/assetic/
 {% endstylesheets %}
 ```
 
-### Errors encounters
+### Errors encountered
 I got the following error after configuring assetic to work from twig:
 
 > Unable to generate a URL for the named route ...
