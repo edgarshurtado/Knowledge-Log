@@ -124,6 +124,14 @@ private $ser4;
 
 * `php app\console cache:clear`
 
+#### Install assets
+
+This process will take the assets put on the **Resources>Public** of each bundle
+in **web/bundles**. Being **web** the folder where files are served directly.
+
+* `php app\console assets:install` (as hard copies)
+* `php app\console assets:install -symlink web` (as symbolic links)
+
 ### Create your own
 For creating a symfony command, create a file in the Command folder of the Bundle
 
