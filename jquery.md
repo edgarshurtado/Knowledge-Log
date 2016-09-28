@@ -20,3 +20,7 @@ have to remove it first as following:
 ```
 
 > $domElement accepts an html string or jQuery element
+
+
+## jQuery multiselect
+[url plugin](http://www.erichynds.com/blog/jquery-ui-multiselect-widget)
