@@ -161,6 +161,20 @@ protected function execute(InputInterface $input, OutputInterface $output)
 }
 ```
 
+In the `BundleName.php` file, import your new command
+
+```php
+use BundleName\Command\CommandFile
+
+// ...
+    public function registerCommands(Application $application)
+    {
+        $application->add(new CommandFile());
+    }
+
+// ...
+```
+
 The injection of `InputInterface` and `OutputInterface` is compulsary
 
 ## Assetic
