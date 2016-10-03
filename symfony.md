@@ -226,3 +226,27 @@ our assets are in **web/bundles/my-bundle/**
 will break all internal links in css files to other assets such as images
 
 [reference](http://www.craftitonline.com/2011/06/symfony2-beautify-with-assetic-and-a-template-part-ii/)
+
+### YML
+
+#### YML service names are normalized
+
+When referencing to a service, doesn't matter if the name has underscores or
+capital letters, symfony will read it correctly anyway. For example:
+
+```yml
+exampleService:
+    class: DefaultBundle\Service\ExampleService
+    arguments: []
+```
+
+Now, at any point where we have access to the `Container` we can get the service
+with any of these combinations.
+
+```php
+$this->get("example_service");
+$this->get("exampleService");
+$this->get("eXamPlesErvIce");
+```
+
+I find this useful when generating the service names for the get method dinamically
