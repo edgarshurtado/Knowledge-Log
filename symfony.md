@@ -188,6 +188,33 @@ use BundleName\Command\CommandFile
 
 The injection of `InputInterface` and `OutputInterface` is compulsary
 
+### Add Arguments or/and Options
+
+Example:
+
+```php
+protected function configure()
+{
+    $this
+        ->setName('name:command') // Nombre para su ejecución
+        ->setDescription(' Description for your comand')
+        ->addOption(
+            "name", // The name of the option
+            "t",    // Single char. This allows us to refer to the option as -t
+            InputOption::VALUE_NONE, // The Option doesn't have stored value
+            "Info about the option"
+        );
+
+    // ...
+
+    $optionSet = $this->getOption("name");
+
+    if($optionSet) // Do some stuff.
+}
+```
+
+[resource](https://symfony.com/doc/2.8/console/input.html);
+
 ## Assetic
 
 ### Installation
