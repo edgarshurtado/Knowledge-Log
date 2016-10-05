@@ -35,3 +35,23 @@ all the values
 it considers the whole form as an array of information. That for, when a select
 has multiple selected values, the keynames collide and the info is overwritten
 
+## Scape single and double quotes
+
+These functions are usefull overall when recieving a string from the user that
+you want to persist on the DB.
+
+```php
+$stringWithQuotes = "This ' is a single quote";
+$stringWithScapedQuotes = addslashes($stringWithQuotes);
+    // "This \' is a single quote"
+```
+
+This string is now ready to be inserted in the DB. For doing the reverse
+operation:
+
+```php
+$stringWithScapedQuotes =  "This \' is a single quote";
+$stringWithNoSlashes = stripslashes($stringWithScapedQuotes);
+
+    //  "This ' is a single quote"
+```
