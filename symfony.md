@@ -87,6 +87,17 @@ private $encuestaRespuestas;
 > If the relationship is with an Entity from other bundle, we
 use the namespace of the entity. (e.g: `AdminBundle\Entity\Cliente`)
 
+### Using comparative conditions
+
+```php
+$criteria = new \Doctrine\Common\Collections\Criteria();
+$criteria->where($criteria->expr()->gt('prize', 200));
+
+$result = $entityRepository->matching($criteria);
+```
+
+[resource](http://stackoverflow.com/a/14790069)
+
 ### Errors got previously
 
 #### `Attribute "length" of ... expects a(n) integer, but got string.`
