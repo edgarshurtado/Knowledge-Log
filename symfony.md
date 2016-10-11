@@ -135,6 +135,9 @@ private $ser4;
 
 * `php app\console cache:clear`
 
+* `php app/console cache:clear --env=prod --no-debug`
+
+
 #### Install assets
 
 This process will take the assets put on the **Resources>Public** of each bundle
@@ -142,6 +145,9 @@ in **web/bundles**. Being **web** the folder where files are served directly.
 
 * `php app\console assets:install` (as hard copies)
 * `php app\console assets:install -symlink web` (as symbolic links)
+
+Intall assets for production
+* `php app/console cache:clear --env=prod --no-debug`
 
 ### Create your own
 For creating a symfony command, create a file in the Command folder of the Bundle
@@ -241,6 +247,13 @@ For detailed info see [the symfony docs](http://symfony.com/doc/current/assetic/
     <link rel="stylesheet" href="{{ asset_url }}" />
 {% endstylesheets %}
 ```
+
+### Prepare Assetic for production
+
+For the production enviroment is needed to dump all the files managed by
+assetic
+
+* `php app/console assetic:dump --env=prod --no-debug`
 
 ### Errors encountered
 I got the following error after configuring assetic to work from twig:
