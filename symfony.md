@@ -315,3 +315,13 @@ $this->get("eXamPlesErvIce");
 ```
 
 I find this useful when generating the service names for the get method dinamically
+
+### Export Data to a File in CSV
+
+[resource](https://vauly.com/symfony2-export-csv);
+
+and add the line: just before returning the response
+
+```php
+echo "\xEF\xBB\xBF"; // UTF-8 BOM
+```
