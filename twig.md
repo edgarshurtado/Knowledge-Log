@@ -25,3 +25,11 @@ Converts the string to uppercase or lowercase depending on which one is used
 
 Removes characters from both ends of a string
 
+## Check if a variable is defined
+``` 
+{% if foo is defined %}
+    ...
+{% endif %}
+``` 
+
+works for variables and attributes
