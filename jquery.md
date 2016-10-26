@@ -65,3 +65,18 @@ When we want a search box placed somewhere else
         assetTranslation
     );
 ```
+
+### Inyect dom elements
+
+Just type on the "sDom" property the dom element as follows
+
+```js
+$(document).ready( function() {
+  $('#example').dataTable( {
+      "sDom": '<"top"i>rt<"bottom"flp><"clear">'
+  } );
+} );
+```
+
+This code will create a div with the "clear" class. Furthermore, it will add the class
+"top" to the i element and "bottom to f, l and p
