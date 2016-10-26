@@ -55,3 +55,18 @@ $stringWithNoSlashes = stripslashes($stringWithScapedQuotes);
 
     //  "This ' is a single quote"
 ```
+
+## Writting UTF-8 in a CSV compatible with excel
+Funny enough, if you write utf-8 chars in a csv, even though the codification is
+right, if the csv is opened with Excel, all the special chars will be broken.
+
+To prevent this we have just to do a UTF-8 BOM before sending the file
+
+```php
+header('Content-Encoding: UTF-8');
+header('Content-type: text/csv; charset=UTF-8');
+header('Content-Disposition: attachment; filename=Customers_Export.csv');
+echo "\xEF\xBB\xBF"; // UTF-8 BOM
+```
+
+[credits](http://stackoverflow.com/a/4440143)
