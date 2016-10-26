@@ -33,3 +33,5 @@ Removes characters from both ends of a string
 ``` 
 
 works for variables and attributes
+
+[resource](http://twig.sensiolabs.org/doc/tests/defined.html)
