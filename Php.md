@@ -70,3 +70,12 @@ echo "\xEF\xBB\xBF"; // UTF-8 BOM
 ```
 
 [credits](http://stackoverflow.com/a/4440143)
+
+## Send a file to the client
+
+The file has to be opened with the php output stream
+```php
+$fp = fopen("php://output", "w")
+// Do some other stuff with the file
+```
+Then, send the file as a streamed response to the user
