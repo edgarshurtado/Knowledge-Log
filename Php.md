@@ -79,3 +79,20 @@ $fp = fopen("php://output", "w")
 // Do some other stuff with the file
 ```
 Then, send the file as a streamed response to the user
+
+## Replace the Zero Width Space
+
+```php
+<?php
+/**
+ * http://stackoverflow.com/questions/11305797/remove-zero-width-space-characters-from-a-javascript-string
+ * U+200B zero width space
+ * U+200C zero width non-joiner Unicode code point
+ * U+200D zero width joiner Unicode code point
+ * U+FEFF zero width no-break space Unicode code point
+ */
+
+$text = preg_replace( '/[\x{200B}-\x{200D}]/u', '', $text );
+```
+
+[credits](https://gist.github.com/ahmadazimi/b1f1b8f626d73728f7aa)
