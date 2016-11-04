@@ -96,6 +96,15 @@ $criteria->where($criteria->expr()->gt('prize', 200));
 $result = $entityRepository->matching($criteria);
 ```
 
+### How to use the WHERE variable IN array
+
+```php
+$queryBuilder = $em->createQueryBuilder();
+$queryBuilder->andWhere('r.winner IN (:ids)')
+             ->setParameter('ids', $ids);
+```
+[resource](http://stackoverflow.com/a/11874278)
+
 [resource](http://stackoverflow.com/a/14790069)
 
 ### Errors got previously
