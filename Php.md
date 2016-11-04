@@ -96,3 +96,16 @@ $text = preg_replace( '/[\x{200B}-\x{200D}]/u', '', $text );
 ```
 
 [credits](https://gist.github.com/ahmadazimi/b1f1b8f626d73728f7aa)
+
+## Delete UTF-8 BOM from a text
+
+```php
+function remove_utf8_bom($text)
+{
+    $bom = pack('H*','EFBBBF');
+    $text = preg_replace("/^$bom/", '', $text);
+    return $text;
+}
+```
+
+[resource](http://stackoverflow.com/a/15423899)
