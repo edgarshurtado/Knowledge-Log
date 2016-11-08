@@ -4,17 +4,11 @@ Add to php.ini the following lines of code
 
 ```
 ;#### XDEBUG #####
-
-
-
 ;# Activate
 
 extension=php_xdebug.dll
 
-
-
-;# Condig
-
+;# Coding
 xdebug.var_display_max_depth = 8
 
 xdebug.var_display_max_children = -1
