@@ -107,7 +107,7 @@ $queryBuilder->andWhere('r.winner IN (:ids)')
 
 [resource](http://stackoverflow.com/a/14790069)
 
-### Errors got previously
+### Errors gotten
 
 #### `Attribute "length" of ... expects a(n) integer, but got string.`
 
