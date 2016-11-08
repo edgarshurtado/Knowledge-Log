@@ -107,6 +107,10 @@ $queryBuilder->andWhere('r.winner IN (:ids)')
 
 [resource](http://stackoverflow.com/a/14790069)
 
+### Resources
+
+* [Some Doctrine2 best practices](https://www.uvd.co.uk/blog/some-doctrine-2-best-practices/)
+
 ### Errors gotten
 
 #### `Attribute "length" of ... expects a(n) integer, but got string.`
