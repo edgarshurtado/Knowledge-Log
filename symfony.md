@@ -103,9 +103,8 @@ $queryBuilder = $em->createQueryBuilder();
 $queryBuilder->andWhere('r.winner IN (:ids)')
              ->setParameter('ids', $ids);
 ```
-[resource](http://stackoverflow.com/a/11874278)
-
-[resource](http://stackoverflow.com/a/14790069)
+[resource1](http://stackoverflow.com/a/11874278)
+[resource2](http://stackoverflow.com/a/14790069)
 
 ### Raw sql on Symfony2
 This is the way for retrieving an array with the results of a sql:
