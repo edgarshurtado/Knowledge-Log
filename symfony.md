@@ -107,6 +107,41 @@ $queryBuilder->andWhere('r.winner IN (:ids)')
 
 [resource](http://stackoverflow.com/a/14790069)
 
+### Raw sql on Symfony2
+This is the way for retrieving an array with the results of a sql:
+
+```php
+$conn = $em->getConecction();
+$sql = "SELECT * FROM table_name";
+$r = $conn->executeQuery($sql)
+          ->fetchAll();
+```
+
+With fecthAll we get the whole result array. Otherway we would have to iterate
+over the pointer executeQuery returns in order to access the data.
+
+```php
+$conn = $em->getConecction();
+$sql = "SELECT * FROM table_name";
+$r = $conn->executeQuery($sql)
+
+foreach($r as $result){
+    var_dump($result); echo "<br";
+}
+```
+
+Execute query doesn't return an array, so the following code would give us an
+error
+
+```php
+$conn = $em->getConecction();
+$sql = "SELECT * FROM table_name";
+$r = $conn->executeQuery($sql)
+
+var_dump($r[0]);
+
+```
+
 ### Resources
 
 * [Some Doctrine2 best practices](https://www.uvd.co.uk/blog/some-doctrine-2-best-practices/)
