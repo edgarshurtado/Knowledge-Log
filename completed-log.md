@@ -19,7 +19,7 @@
 * [The Truth About Multiple H1 Tags in the HTML5 Era](http://webdesign.tutsplus.com/articles/the-truth-about-multiple-h1-tags-in-the-html5-era--webdesign-16824)
 * [How the web works part I](https://medium.freecodecamp.com/how-the-web-works-a-primer-for-newcomers-to-web-development-or-anyone-really-b4584e63585c#.pw02qy62t) [part II](https://medium.freecodecamp.com/how-the-web-works-part-ii-client-server-model-the-structure-of-a-web-application-735b4b6d76e3#.8n8ygftqb) [part III](https://medium.freecodecamp.com/how-the-web-works-part-iii-http-rest-e61bc50fa0a#.zbgrosvir)
 * [Combining fonts (10 tips for designers)](https://designschool.canva.com/blog/combining-fonts-10-must-know-tips-from-a-designer/)
-* [10 tips for JS debugging experience](https://medium.freecodecamp.com/10-tips-to-maximize-your-javascript-debugging-experience-b69a75859329#.nenqpl8l0)
+* [10 tips for JS debugging in Chrome](https://medium.freecodecamp.com/10-tips-to-maximize-your-javascript-debugging-experience-b69a75859329#.nenqpl8l0)
 
 ## Videos
 * [Classical Inheritance is Obsolete](https://vimeo.com/69255635)
