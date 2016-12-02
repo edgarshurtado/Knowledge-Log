@@ -372,3 +372,11 @@ and add the line: just before returning the response
 ```php
 echo "\xEF\xBB\xBF"; // UTF-8 BOM
 ```
+
+### Preparing for production enviroment a Symfony project
+
+```bash
+php app\console assets:install
+php app\console assetic:dump --env=prod --no-debug
+php app\console cache:clear --env=prod --no-debug
+```
