@@ -174,6 +174,17 @@ private $ser4;
 
 > [reference](http://stackoverflow.com/a/33241263)
 
+#### `Could not convert database value "" to Doctrine Type array`
+This was due of having a column as type array in doctrine and having the
+value on the database as `""`. I just had to set as value for the column:
+`"a:0:{}"`.
+
+```mysql
+UPDATE table SET column="a:0:{}" WHERE column = "";
+```
+
+> [source](http://stackoverflow.com/a/8819929)
+
 ## Symfony commands
 
 ### Built in commands
@@ -379,4 +390,21 @@ echo "\xEF\xBB\xBF"; // UTF-8 BOM
 php app\console assets:install
 php app\console assetic:dump --env=prod --no-debug
 php app\console cache:clear --env=prod --no-debug
+```
+
+### Inyect security.token_storage in a service
+
+```yml
+# service.yml
+service:
+    class:  ...
+    arguments: ["@security.token_storage"]
+```
+
+```php
+use Symfony\Component\Security\Core\Authentication\Token\Storage\TokenStorage;
+
+class Service {
+    // ... logic
+}
 ```
