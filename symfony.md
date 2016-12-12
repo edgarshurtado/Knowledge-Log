@@ -279,6 +279,20 @@ protected function configure()
 
 [resource](https://symfony.com/doc/2.8/console/input.html);
 
+### Call command within a command
+```php
+    //...
+    use Symfony\Component\Console\Input\ArrayInput;
+
+    //...
+    $output->writeln("Initial message ");
+    $command = $this->getApplication()->find('assets:install');
+    $arguments = array();
+
+    $input = new ArrayInput($arguments);
+    $returnCode = $command->run($input, $output);
+```
+
 ## Assetic
 
 ### Installation
