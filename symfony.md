@@ -422,3 +422,10 @@ class Service {
     // ... logic
 }
 ```
+
+## FOSUserBundle
+
+* [role hierarchical roles](http://symfony.com/doc/current/security.html#hierarchical-roles);
+* [add several roles to a path](http://stackoverflow.com/a/19453541)
+* [checking authentication](http://stackoverflow.com/a/12984413)
+* [command line tools](http://symfony.com/doc/current/bundles/FOSUserBundle/command_line_tools.html)
