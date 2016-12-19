@@ -103,9 +103,43 @@ $queryBuilder = $em->createQueryBuilder();
 $queryBuilder->andWhere('r.winner IN (:ids)')
              ->setParameter('ids', $ids);
 ```
-[resource](http://stackoverflow.com/a/11874278)
+[resource1](http://stackoverflow.com/a/11874278)
+[resource2](http://stackoverflow.com/a/14790069)
 
-[resource](http://stackoverflow.com/a/14790069)
+### Raw sql on Symfony2
+This is the way for retrieving an array with the results of a sql:
+
+```php
+$conn = $em->getConecction();
+$sql = "SELECT * FROM table_name";
+$r = $conn->executeQuery($sql)
+          ->fetchAll();
+```
+
+With fecthAll we get the whole result array. Otherway we would have to iterate
+over the pointer executeQuery returns in order to access the data.
+
+```php
+$conn = $em->getConecction();
+$sql = "SELECT * FROM table_name";
+$r = $conn->executeQuery($sql)
+
+foreach($r as $result){
+    var_dump($result); echo "<br";
+}
+```
+
+Execute query doesn't return an array, so the following code would give us an
+error
+
+```php
+$conn = $em->getConecction();
+$sql = "SELECT * FROM table_name";
+$r = $conn->executeQuery($sql)
+
+var_dump($r[0]);
+
+```
 
 ### Resources
 
@@ -139,6 +173,17 @@ private $ser4;
 > Notice the diference in the value passed to length
 
 > [reference](http://stackoverflow.com/a/33241263)
+
+#### `Could not convert database value "" to Doctrine Type array`
+This was due of having a column as type array in doctrine and having the
+value on the database as `""`. I just had to set as value for the column:
+`"a:0:{}"`.
+
+```mysql
+UPDATE table SET column="a:0:{}" WHERE column = "";
+```
+
+> [source](http://stackoverflow.com/a/8819929)
 
 ## Symfony commands
 
@@ -233,6 +278,20 @@ protected function configure()
 ```
 
 [resource](https://symfony.com/doc/2.8/console/input.html);
+
+### Call command within a command
+```php
+    //...
+    use Symfony\Component\Console\Input\ArrayInput;
+
+    //...
+    $output->writeln("Initial message ");
+    $command = $this->getApplication()->find('assets:install');
+    $arguments = array();
+
+    $input = new ArrayInput($arguments);
+    $returnCode = $command->run($input, $output);
+```
 
 ## Assetic
 
@@ -338,3 +397,35 @@ and add the line: just before returning the response
 ```php
 echo "\xEF\xBB\xBF"; // UTF-8 BOM
 ```
+
+### Preparing for production enviroment a Symfony project
+
+```bash
+php app\console assets:install
+php app\console assetic:dump --env=prod --no-debug
+php app\console cache:clear --env=prod --no-debug
+```
+
+### Inyect security.token_storage in a service
+
+```yml
+# service.yml
+service:
+    class:  ...
+    arguments: ["@security.token_storage"]
+```
+
+```php
+use Symfony\Component\Security\Core\Authentication\Token\Storage\TokenStorage;
+
+class Service {
+    // ... logic
+}
+```
+
+## FOSUserBundle
+
+* [role hierarchical roles](http://symfony.com/doc/current/security.html#hierarchical-roles);
+* [add several roles to a path](http://stackoverflow.com/a/19453541)
+* [checking authentication](http://stackoverflow.com/a/12984413)
+* [command line tools](http://symfony.com/doc/current/bundles/FOSUserBundle/command_line_tools.html)
