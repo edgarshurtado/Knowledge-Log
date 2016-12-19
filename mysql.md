@@ -7,3 +7,19 @@ DELETE n1
 ```
 
 [source](http://stackoverflow.com/a/5016434)
+
+## Some thought about eficiency
+There are some operations that are faster in mysql than by code
+[source](http://www.onextrapixel.com/2010/06/23/mysql-has-functions-part-5-php-vs-mysql-performance/):
+
+* Calculating average and counting rows
+* Formating dates
+* Habiliting the cache makes operations even faster
+
+However the operations with individual values seems to be very poorly optimized
+and such operation are better performed in code.
+[source](http://stackoverflow.com/a/6449162)
+
+The thing is that too much code on the db obtuses the logic of the application
+and is up to the programmer to have a balance between speed and clarity.
+
