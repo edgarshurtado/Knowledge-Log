@@ -429,3 +429,20 @@ class Service {
 * [add several roles to a path](http://stackoverflow.com/a/19453541)
 * [checking authentication](http://stackoverflow.com/a/12984413)
 * [command line tools](http://symfony.com/doc/current/bundles/FOSUserBundle/command_line_tools.html)
+
+### Call assets:install from Controller
+
+`assets:install` is supposed to be called from the project root. That's why if
+called from a controller, it won't be able to find the `web` folder. Thus, a
+hack for being able to execute `assets:install` from a controller is changing
+the php current directory. To change to the project root folder write at the
+beginning or your controller:
+
+```php
+
+$projectRootDir = $this->get('kernel')->getRootDir() . "/../";
+chdir($projectRootDir);
+```
+
+> I had to use this hack because of I couldn't specify the path to web as when
+you execute the command from the console `php app\console assets:install path`
