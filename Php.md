@@ -109,3 +109,8 @@ function remove_utf8_bom($text)
 ```
 
 [resource](http://stackoverflow.com/a/15423899)
+
+
+## Change apache variables
+
+* with [ini_set](http://php.net/manual/es/function.ini-set.php)

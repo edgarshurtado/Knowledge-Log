@@ -19,3 +19,17 @@ xdebug.var_display_max_data = -1
 this will var_dump variables nicely formated.
 
 > Tip by my co-worker Cristian Trave
+
+## Avoid timelimit
+
+### from .htaccess
+
+```
+php_value max_execution_time 1200
+```
+
+### from php.ini
+
+```
+max_execution_time=1200
+```

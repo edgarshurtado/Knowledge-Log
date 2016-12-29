@@ -473,3 +473,10 @@ chdir($projectRootDir);
 
 > I had to use this hack because of I couldn't specify the path to web as when
 you execute the command from the console `php app\console assets:install path`
+
+## Change execution time for the app
+
+You have to use the ini_set('max_execution_time', 0);
+
+If you set it in a controller it'll only afect to that controller process, if
+you set it in `app.php` or `app_dev.php` it will afect the whole project.
