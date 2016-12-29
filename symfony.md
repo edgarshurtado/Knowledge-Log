@@ -87,6 +87,24 @@ private $encuestaRespuestas;
 > If the relationship is with an Entity from other bundle, we
 use the namespace of the entity. (e.g: `AdminBundle\Entity\Cliente`)
 
+### Allow cascade persist
+
+> This only applies to properties of an entity with a relation with other one
+
+This is useful if an object has a foreign key to another and we want to persist
+both at the same time. This means that if the referenced object isn't at the DB
+it will be created and inserted.
+
+For doing this we add the following anottation `cascade={"persist"}` as in the
+example:
+
+```php
+    /*
+     * @ORM\ManyToOne(targetEntity="AdminBundle\Entity\Zona", inversedBy="encuestas", cascade={"persist"})
+     */
+```
+
+
 ### Using comparative conditions
 
 ```php
@@ -184,6 +202,15 @@ UPDATE table SET column="a:0:{}" WHERE column = "";
 ```
 
 > [source](http://stackoverflow.com/a/8819929)
+
+#### References to the same object persisted in diferent batches
+
+If the persistance of several objects in doctrine is done in batches (this is
+inside some kind of loop that counts a maximum of objects to call `persist`
+before executing `flush`) if a new object is persisted in a different batch than
+a following object that has a foreign key to te former, the object would not be
+the same and doctrine will either create a new one or throw a cascade persist
+error if the entity with the foreign key doesn't allow to persist in cascade;
 
 ## Symfony commands
 
