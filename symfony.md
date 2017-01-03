@@ -28,6 +28,26 @@ public function someController(Request $request)
 ```
 [more info](https://symfony.com/doc/master/controller.html#redirecting)
 
+### Gotten errors
+
+#### [Syntax Error] Expected PlainValue, got ''' at position...
+Due to an error when writting the name for the controller when using anotations
+
+Error code:
+```php
+/**
+* @Route("/", name='proceso_carga')
+*/
+```
+
+Corrected code:
+```php
+/**
+* @Route("/", name="proceso_carga")
+*/
+```
+
+
 ## Bundles
 ### Create a new bundle
 
