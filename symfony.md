@@ -15,6 +15,18 @@ public function updateAction(Request $request)
     $request->request->get('name');
 }
 ```
+### Redirect response among controllers
+
+```php
+//Symfony controller
+
+public function someController(Request $request)
+{
+	$requestParams = array("param1" => "some value");
+	return $this->redirectToRoute('controller_name', $requestParams);
+}
+```
+[more info](https://symfony.com/doc/master/controller.html#redirecting)
 
 ## Bundles
 ### Create a new bundle
