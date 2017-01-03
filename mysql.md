@@ -23,3 +23,11 @@ and such operation are better performed in code.
 The thing is that too much code on the db obtuses the logic of the application
 and is up to the programmer to have a balance between speed and clarity.
 
+## Check the mysql version
+
+Execute the following sentence:
+
+```mysql
+SHOW VARIABLES LIKE `version`
+```
+
