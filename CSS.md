@@ -64,8 +64,43 @@ Add this class to you css
 [source](http://stackoverflow.com/questions/3956043/css-how-to-position-element-in-lower-right)
 
 ## Sticky footer
-How to kept the footer at the bottom
+How to kept the footer at the bottom even though your content doesn't fill the
+whole height of the display
+
 [source](https://philipwalton.github.io/solved-by-flexbox/demos/sticky-footer/)
+
+* An alternative with just css [Sticky footer - CSS tricks](https://css-tricks.com/snippets/css/sticky-footer/)
+```html
+<body>
+    <header></header>
+    <article></article>
+    <footer></footer>
+</body>
+```
+
+```css
+body {
+    height:100%;
+}
+
+header {
+    height: 50px;
+}
+
+footer{
+    height: 50px;
+}
+
+article{
+    height:100%;
+   /* The header and footer height respectively */ 
+    margin-bottom: -50px;
+    margin-top: -50px;
+}
+```
+
+> This is a really simple implementation. Do not style your web by 
+targeting tags with your css :P
 
 ##Align form elements
 ```
