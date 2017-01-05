@@ -244,6 +244,25 @@ a following object that has a foreign key to te former, the object would not be
 the same and doctrine will either create a new one or throw a cascade persist
 error if the entity with the foreign key doesn't allow to persist in cascade;
 
+#### Leak memories
+
+Here's a [stack-overflow post](http://stackoverflow.com/questions/9699185/memory-leaks-symfony2-doctrine2-exceed-memory-limit) where they sugest some solutions (Doctrine2). The one that
+worked for me was disabling the Doctrine logger:
+
+```php
+$em->getConnection()->getConfiguration()->setSQLLogger(null);
+```
+
+Some how, even though you call `$em->flush(); $em->clear()` in [batches](http://docs.doctrine-project.org/projects/doctrine-orm/en/latest/reference/batch-processing.html#bulk-inserts), if the SQL logger is active, you'll overflow php memory easily when dealing with large amounts of data.
+
+Anyway I wouldn't suggest to use doctrine for managing big DB as the own Doctrine's team state [here](http://docs.doctrine-project.org/projects/doctrine-orm/en/latest/reference/batch-processing.html#batch-processing).
+
+> An ORM tool is not primarily well-suited for mass inserts, updates or
+deletions. Every RDBMS has its own, most effective way of dealing with such
+operations and if the options outlined below are not sufficient for your
+purposes we recommend you use the tools for your particular RDBMS for these
+bulk operations.
+
 ## Symfony commands
 
 ### Built in commands
