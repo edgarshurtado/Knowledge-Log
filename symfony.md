@@ -531,3 +531,11 @@ You have to use the ini_set('max_execution_time', 0);
 
 If you set it in a controller it'll only afect to that controller process, if
 you set it in `app.php` or `app_dev.php` it will afect the whole project.
+
+### ERR_TOO_MANY_REDIRECTS
+
+Due to a corrupted session. The FOSUserBundle enters in a infinite loop of redirections until
+the web browser throws the error.
+
+Neither clearing the cache, deleting my web-browser coockies or re-installing all the vendors solved the problem.
+A restart of my computuer did.
