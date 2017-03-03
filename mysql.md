@@ -8,7 +8,7 @@ DELETE n1
 
 [source](http://stackoverflow.com/a/5016434)
 
-## Some thought about eficiency
+## Some thoughts about eficiency
 There are some operations that are faster in mysql than by code
 [source](http://www.onextrapixel.com/2010/06/23/mysql-has-functions-part-5-php-vs-mysql-performance/):
 
@@ -31,3 +31,6 @@ Execute the following sentence:
 SHOW VARIABLES LIKE `version`
 ```
 
+## Use of indexes
+
+[Mysql: Índices y optimización de consultas](https://www.dimensis.com/consejos-1-1.html) (Spanish)
