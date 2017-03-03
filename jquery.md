@@ -80,3 +80,13 @@ $(document).ready( function() {
 
 This code will create a div with the "clear" class. Furthermore, it will add the class
 "top" to the i element and "bottom to f, l and p
+
+### Get total of rows
+
+```js
+var tableinfo = dt.page.info();
+
+total = tableinfo.recordsTotal;
+```
+
+[credits](https://datatables.net//forums/discussion/comment/61957/#Comment_61957);
