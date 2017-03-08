@@ -63,3 +63,19 @@ SHOW INDEXES FROM db_name.table_name;
 * Every query can use just one index
 * Beware when you have an application which makes a lot of writes cause the indexes will make this 
 operation to slow down.
+
+## MySQL CACHE
+
+### Considerations about mysql cache
+* Every create/update/delate action into the db will flush the cache related with the table that has been modified
+
+### Delete CACHE
+
+`SQL_NO_CACHE` avoids the save of the results in cache, however if the sentence was already in cache
+it will be used anyway. To force Mysql to not use cache we can configure the server to do so or reset
+manually the cache with:
+
+```mysql
+RESET QUERY CACHE;
+```
+
