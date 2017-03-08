@@ -34,3 +34,32 @@ SHOW VARIABLES LIKE `version`
 ## Use of indexes
 
 [Mysql: Índices y optimización de consultas](https://www.dimensis.com/consejos-1-1.html) (Spanish)
+
+### Create an Index
+
+```mysql
+CREATE INDEX index_name ON table_name
+```
+
+### Drop an index
+
+```mysql
+DROP INDEX index_name FROM table_name
+```
+
+### SHOW table indexes
+
+```mysql
+SHOW INDEXES FROM table_name;
+
+SHOW INDEXES FROM table_name FROM db_name;
+
+SHOW INDEXES FROM db_name.table_name;
+```
+
+### Some considerations
+
+* Execute the explain comand for seeing the index used by a query
+* Every query can use just one index
+* Beware when you have an application which makes a lot of writes cause the indexes will make this 
+operation to slow down.
