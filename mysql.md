@@ -79,3 +79,8 @@ manually the cache with:
 RESET QUERY CACHE;
 ```
 
+### View CACHE status
+
+```mysql
+SHOW STATUS LIKE "Qcache%";
+```
