@@ -38,7 +38,7 @@ SHOW VARIABLES LIKE `version`
 ### Create an Index
 
 ```mysql
-CREATE INDEX index_name ON table_name
+CREATE INDEX index_name ON table_name (colum_name [,colum_name_2 ...])
 ```
 
 ### Drop an index
