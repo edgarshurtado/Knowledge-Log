@@ -84,3 +84,10 @@ RESET QUERY CACHE;
 ```mysql
 SHOW STATUS LIKE "Qcache%";
 ```
+
+### Enable/Disable Foreign Key Checks
+
+```mysql
+SET FOREIGN_KEY_CHECKS=0; // Disable
+SET FOREIGN_KEY_CHECKS=1; // Enable
+```
