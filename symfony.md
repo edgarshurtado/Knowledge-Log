@@ -136,6 +136,58 @@ example:
      */
 ```
 
+### Set unique constraints
+
+See the **table** definition and how I set a constraint for 2 columns.
+
+```php
+
+<?php
+
+namespace SurveyBundle\Entity;
+
+use Doctrine\ORM\Mapping as ORM;
+
+/**
+ * Modelo
+ *
+ * @ORM\Table(name="survey_modelo_encuesta",
+    uniqueConstraints={@ORM\UniqueConstraint(name="id_modelo_tipo_idx",
+        columns={"id_modelo_encuesta_tipo", "tipo"})}))
+ * @ORM\Entity(repositoryClass="SurveyBundle\Repository\ModeloRepository")
+ */
+class ModeloEncuesta
+{
+    /**
+     * @var int
+     *
+     * @ORM\Column(name="id", type="integer")
+     * @ORM\Id
+     * @ORM\GeneratedValue(strategy="AUTO")
+     */
+    private $id;
+
+    /**
+     * @ORM\Column(name="id_modelo_encuesta_tipo", type="integer")
+     *
+     * Se trata del id que va a tener la encuesta con respecto a otras encuestas
+     * de su mismo tipo.
+     */
+    private $idModeloEncuestaTipo;
+
+    /**
+     *  @ORM\Column(name="tipo", type="string", length=255, columnDefinition="ENUM('area', 'area de apoyo')")
+     */
+    private $tipo;
+
+    /**
+     * @ORM\Column(name="titulo", type="string", length=255)
+     */
+    private $titulo;
+
+    // etc..
+```
+
 
 ### Using comparative conditions
 
