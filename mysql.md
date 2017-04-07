@@ -91,3 +91,15 @@ SHOW STATUS LIKE "Qcache%";
 SET FOREIGN_KEY_CHECKS=0; // Disable
 SET FOREIGN_KEY_CHECKS=1; // Enable
 ```
+### SQL with ROW count
+
+```mysql
+SET @rownum = 0;
+SELECT @rownum:=@rownum+1,  orgs.n_org, orgs.org
+	FROM (
+		SELECT DISTINCT org, n_org
+		FROM cemBankinterDb_BAK30092014.centros_perfiles
+        ORDER BY org
+    ) as orgs;
+SET @rownum=Null;
+```
