@@ -189,6 +189,10 @@ class ModeloEncuesta
 ```
 
 
+### Notes
+
+* When flusing in batches, doctrine do not keep the order in which you called `persist`.[source](http://stackoverflow.com/a/32829569) 
+
 ### Using comparative conditions
 
 ```php
