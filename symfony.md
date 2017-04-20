@@ -595,3 +595,17 @@ the web browser throws the error.
 
 Neither clearing the cache, deleting my web-browser coockies or re-installing all the vendors solved the problem.
 A restart of my computuer did.
+
+## Tests
+
+### How to run specific tests
+
+First install phpunit\phpunit with composer
+
+run:
+
+```
+phpunit -c app src/AppBundle/Tests/
+```
+
+For more information see the oficial docs.
