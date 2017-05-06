@@ -69,6 +69,33 @@ whole height of the display
 
 [source](https://philipwalton.github.io/solved-by-flexbox/demos/sticky-footer/)
 
+## Sticky footer with flexbox
+
+```html
+<body>
+  <div class="content">
+    content
+  </div>
+  <footer class="footer"></footer>
+</body>
+```
+
+```css
+html {
+  height: 100%;
+}
+body {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.content {
+  flex: 1;
+}
+```
+
+[source](https://css-tricks.com/couple-takes-sticky-footer/#article-header-id-3)
+
 * An alternative with just css [Sticky footer - CSS tricks](https://css-tricks.com/snippets/css/sticky-footer/)
 ```html
 <body>
