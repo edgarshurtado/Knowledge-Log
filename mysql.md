@@ -8,7 +8,7 @@ DELETE n1
 
 [source](http://stackoverflow.com/a/5016434)
 
-## Some thought about eficiency
+## Some thoughts about eficiency
 There are some operations that are faster in mysql than by code
 [source](http://www.onextrapixel.com/2010/06/23/mysql-has-functions-part-5-php-vs-mysql-performance/):
 
@@ -31,3 +31,75 @@ Execute the following sentence:
 SHOW VARIABLES LIKE `version`
 ```
 
+## Use of indexes
+
+[Mysql: Índices y optimización de consultas](https://www.dimensis.com/consejos-1-1.html) (Spanish)
+
+### Create an Index
+
+```mysql
+CREATE INDEX index_name ON table_name (colum_name [,colum_name_2 ...])
+```
+
+### Drop an index
+
+```mysql
+DROP INDEX index_name FROM table_name
+```
+
+### SHOW table indexes
+
+```mysql
+SHOW INDEXES FROM table_name;
+
+SHOW INDEXES FROM table_name FROM db_name;
+
+SHOW INDEXES FROM db_name.table_name;
+```
+
+### Some considerations
+
+* Execute the explain comand for seeing the index used by a query
+* Every query can use just one index
+* Beware when you have an application which makes a lot of writes cause the indexes will make this 
+operation to slow down.
+
+## MySQL CACHE
+
+### Considerations about mysql cache
+* Every create/update/delate action into the db will flush the cache related with the table that has been modified
+
+### Delete CACHE
+
+`SQL_NO_CACHE` avoids the save of the results in cache, however if the sentence was already in cache
+it will be used anyway. To force Mysql to not use cache we can configure the server to do so or reset
+manually the cache with:
+
+```mysql
+RESET QUERY CACHE;
+```
+
+### View CACHE status
+
+```mysql
+SHOW STATUS LIKE "Qcache%";
+```
+
+### Enable/Disable Foreign Key Checks
+
+```mysql
+SET FOREIGN_KEY_CHECKS=0; // Disable
+SET FOREIGN_KEY_CHECKS=1; // Enable
+```
+### SQL with ROW count
+
+```mysql
+SET @rownum = 0;
+SELECT @rownum:=@rownum+1,  orgs.n_org, orgs.org
+	FROM (
+		SELECT DISTINCT org, n_org
+		FROM cemBankinterDb_BAK30092014.centros_perfiles
+        ORDER BY org
+    ) as orgs;
+SET @rownum=Null;
+```

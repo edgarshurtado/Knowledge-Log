@@ -136,6 +136,62 @@ example:
      */
 ```
 
+### Set unique constraints
+
+See the **table** definition and how I set a constraint for 2 columns.
+
+```php
+
+<?php
+
+namespace SurveyBundle\Entity;
+
+use Doctrine\ORM\Mapping as ORM;
+
+/**
+ * Modelo
+ *
+ * @ORM\Table(name="survey_modelo_encuesta",
+    uniqueConstraints={@ORM\UniqueConstraint(name="id_modelo_tipo_idx",
+        columns={"id_modelo_encuesta_tipo", "tipo"})}))
+ * @ORM\Entity(repositoryClass="SurveyBundle\Repository\ModeloRepository")
+ */
+class ModeloEncuesta
+{
+    /**
+     * @var int
+     *
+     * @ORM\Column(name="id", type="integer")
+     * @ORM\Id
+     * @ORM\GeneratedValue(strategy="AUTO")
+     */
+    private $id;
+
+    /**
+     * @ORM\Column(name="id_modelo_encuesta_tipo", type="integer")
+     *
+     * Se trata del id que va a tener la encuesta con respecto a otras encuestas
+     * de su mismo tipo.
+     */
+    private $idModeloEncuestaTipo;
+
+    /**
+     *  @ORM\Column(name="tipo", type="string", length=255, columnDefinition="ENUM('area', 'area de apoyo')")
+     */
+    private $tipo;
+
+    /**
+     * @ORM\Column(name="titulo", type="string", length=255)
+     */
+    private $titulo;
+
+    // etc..
+```
+
+
+### Notes
+
+* When flusing in batches, doctrine do not keep the order in which you called `persist`.[source](http://stackoverflow.com/a/32829569) 
 
 ### Using comparative conditions
 
@@ -243,6 +299,25 @@ before executing `flush`) if a new object is persisted in a different batch than
 a following object that has a foreign key to te former, the object would not be
 the same and doctrine will either create a new one or throw a cascade persist
 error if the entity with the foreign key doesn't allow to persist in cascade;
+
+#### Leak memories
+
+Here's a [stack-overflow post](http://stackoverflow.com/questions/9699185/memory-leaks-symfony2-doctrine2-exceed-memory-limit) where they sugest some solutions (Doctrine2). The one that
+worked for me was disabling the Doctrine logger:
+
+```php
+$em->getConnection()->getConfiguration()->setSQLLogger(null);
+```
+
+Some how, even though you call `$em->flush(); $em->clear()` in [batches](http://docs.doctrine-project.org/projects/doctrine-orm/en/latest/reference/batch-processing.html#bulk-inserts), if the SQL logger is active, you'll overflow php memory easily when dealing with large amounts of data.
+
+Anyway I wouldn't suggest to use doctrine for managing big DB as the own Doctrine's team state [here](http://docs.doctrine-project.org/projects/doctrine-orm/en/latest/reference/batch-processing.html#batch-processing).
+
+> An ORM tool is not primarily well-suited for mass inserts, updates or
+deletions. Every RDBMS has its own, most effective way of dealing with such
+operations and if the options outlined below are not sufficient for your
+purposes we recommend you use the tools for your particular RDBMS for these
+bulk operations.
 
 ## Symfony commands
 
@@ -512,3 +587,25 @@ You have to use the ini_set('max_execution_time', 0);
 
 If you set it in a controller it'll only afect to that controller process, if
 you set it in `app.php` or `app_dev.php` it will afect the whole project.
+
+### ERR_TOO_MANY_REDIRECTS
+
+Due to a corrupted session. The FOSUserBundle enters in a infinite loop of redirections until
+the web browser throws the error.
+
+Neither clearing the cache, deleting my web-browser coockies or re-installing all the vendors solved the problem.
+A restart of my computuer did.
+
+## Tests
+
+### How to run specific tests
+
+First install phpunit\phpunit with composer
+
+run:
+
+```
+phpunit -c app src/AppBundle/Tests/
+```
+
+For more information see the oficial docs.
