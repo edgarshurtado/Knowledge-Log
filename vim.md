@@ -16,3 +16,7 @@ register with lowercase letter
 
 The system clipboard is at the "+ register. It can be use for copy
 and for pasting
+
+## Open last file
+Press `Ctrl + o + o`. Vim will open the last file and it will even keep the
+cursor position.
