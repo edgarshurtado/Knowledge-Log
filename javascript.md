@@ -73,5 +73,21 @@ global scope, hence, they were being overwritten in the second IIFE
 
 More information in YDKJS
 
+## Console methods
+
+* console.log
+* console.info
+* console.warn
+* console.error
+* console.assert
+* console.dir
+* console.group (console.groupEnd)
+* console.table
+* console.time (console.timeEnd)
+
+For know more about those methods check [this blog post](https://medium.freecodecamp.com/how-to-get-the-most-out-of-the-javascript-console-b57ca9db3e6d)
+
+
+
 ## Useful Libraries
 * fullPage.js -> Library for smooth scroll to section [web page](http://alvarotrigo.com/fullPage/#firstPage)
