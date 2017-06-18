@@ -88,6 +88,30 @@ More information in YDKJS
 For know more about those methods check [this blog post](https://medium.freecodecamp.com/how-to-get-the-most-out-of-the-javascript-console-b57ca9db3e6d)
 
 
+## Use a setTimeout for exitin a while-loop
+
+The following 2 code snippets crash:
+
+```js
+var count = 1;
+
+while(count > 0){
+	setTimeout(function(){count--};, 1000);
+}
+```
+
+```js
+var count = 1;
+
+setTimeout(function(){count--};, 1000);
+while(count > 0){
+}
+```
+
+I was trying to set a while loop that will last 1 second (is not a real implementation just
+as a concept test) however it seems that the while-loop iterates so fast that doesn't allows
+the setTimeout to be executed.
+
 
 ## Useful Libraries
 * fullPage.js -> Library for smooth scroll to section [web page](http://alvarotrigo.com/fullPage/#firstPage)
