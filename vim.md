@@ -20,3 +20,17 @@ and for pasting
 ## Open last file
 Press `Ctrl + o + o`. Vim will open the last file and it will even keep the
 cursor position.
+
+## Vi in the command line
+For using vi capabilities in the command line, type
+
+```
+set -o vi
+```
+
+Then you can enter tu vi mode by pressing ESC
+
+> Just allows the one line editting features
+
+[source](https://dalibornasevic.com/posts/43-12-vim-tips)
+
