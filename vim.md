@@ -34,3 +34,6 @@ Then you can enter tu vi mode by pressing ESC
 
 [source](https://dalibornasevic.com/posts/43-12-vim-tips)
 
+# Useful resources
+* [12 Vim Tips](https://dalibornasevic.com/posts/43-12-vim-tips)
+* [Learn Vim Progressively](http://yannesposito.com/Scratch/en/blog/Learn-Vim-Progressively/)
