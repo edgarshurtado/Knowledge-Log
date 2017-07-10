@@ -90,3 +90,18 @@ total = tableinfo.recordsTotal;
 ```
 
 [credits](https://datatables.net//forums/discussion/comment/61957/#Comment_61957);
+
+## Bug using jquery dialog and bootstrap
+
+This bug makes the X for closing the dialog not being displayed. Weird enough, the issue is
+due of loading jquery-ui.js before bootrstrap.js. So make sure of loading this resources as
+follows:
+
+```html
+<script src="js/bootstrap.min.js"></script>
+<script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+```
+
+[resource](https://stackoverflow.com/a/20457891)
+
+> The jquery-ui version is just an example
