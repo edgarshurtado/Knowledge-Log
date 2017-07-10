@@ -461,6 +461,22 @@ assetic
 
 * `php app/console assetic:dump --env=prod --no-debug`
 
+### Configurations
+#### Avoid assetic to merge all the assets
+```yaml
+- debug: true
+```
+
+With this option assetic will send to the web browser all the assets individually to facilitate its debuging.
+
+#### Dinamically generate assets
+
+```yaml
+- use_controller: true
+```
+
+With this option there's no need to dump all the assets everytime we want to refresh the page and see some changes regarding to the assets.
+
 ### Errors encountered
 I got the following error after configuring assetic to work from twig:
 
