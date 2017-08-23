@@ -180,3 +180,18 @@ p:not(:last-child){
 
 This code will select all the `p` tags but the ones that are the last child of
 its parent.
+
+## Flex items be of equal size
+
+I had an issue with flexbox which was not growing to items equally. The problem
+was `flex-basis` which is the size of the item provious application of flex-grow.
+The way of fixin this was:
+
+```css
+.flexbox-item{
+    flex-grow: 1;
+    flex-basis: 0;
+}
+```
+
+[source](https://stackoverflow.com/a/25066844)
